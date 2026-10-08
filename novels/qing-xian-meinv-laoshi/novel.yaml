@@ -1,0 +1,54 @@
+schema_version: 1
+id: qing-xian-meinv-laoshi
+title: "情陷美女老师（原创重构项目）"
+status: ingesting
+language: zh-CN
+genre: ["都市", "成长", "犯罪", "动作", "情感"]
+target_audience: "成年男性读者，待确认"
+target_platforms: []
+content_rating: "18+；重构后需重新评级"
+planned_length_words: 800000
+planned_volumes: null
+creative_goal:
+  outcome: original_novel
+  approach: "原创重构"
+  source_rights: user_owned_and_authorized
+narrative:
+  pov: "第一人称主视角；重构方案建议改为限知第三人称，待确认"
+  tense: "过去时"
+  tone: ["热血", "暧昧", "升级", "悬疑"]
+  pacing: "快节奏；持续提供艳遇、势力升级和后台揭示，但避免同构重复"
+core:
+  logline: "一个被羞辱和欲望驱动的大学生闯入地下秩序，在权力不断放大其欲望时，必须决定自己要成为支配他人的王，还是能够守住关系与底线的人。"
+  dramatic_question: "陈照南能否在权力、复仇和亲密关系的诱惑中建立自己的边界，而不是成为曾经憎恨的人？"
+  theme_question: "一个人获得力量后，荣耀来自征服、占有，还是承担责任？"
+  reader_promise: "艳遇关系持续扩展、势力版图逐级跃迁、后台身份层层揭示，并在高压冲突中兑现成长与征服快感。"
+boundaries:
+  must_keep:
+    - "普通青年被卷入强势秩序后的身份跃迁"
+    - "力量与欲望反噬人格的核心矛盾"
+    - "亲密关系要求主角作出真实选择"
+    - "主角不断叠加的艳遇，每段关系提供不同情绪与剧情价值"
+    - "从校园到地方、跨城、家族和特殊组织的势力等级升级"
+    - "父辈、导师、家族与神秘强者构成的后台人物揭示"
+  must_avoid:
+    - "将强迫、偷拍、羞辱和师生权力差浪漫化"
+    - "以女性角色作为奖品或性功能标签"
+    - "艳遇只重复身体描写，不改变关系、资源、风险或主线"
+    - "势力升级只换更强敌人，不改变规则、地图和代价"
+    - "后台人物无铺垫、无边界地替主角清除全部终局矛盾"
+    - "可复制的犯罪、毒品或暴力操作细节"
+  ending_constraints:
+    - "终局必须由主角此前的选择和代价推动"
+    - "核心感情线与主角最终命运需用户确认"
+shared_universe: null
+source_of_truth:
+  raw_immutable: true
+  wiki_owner: llm
+  human_approval_required:
+    - core_theme
+    - protagonist_fate
+    - ending
+    - publication_risk
+created: 2026-10-08
+updated: 2026-10-08

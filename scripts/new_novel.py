@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import re
 import shutil
 import sys
@@ -12,6 +13,7 @@ from pathlib import Path
 
 TEXT_SUFFIXES = {".md", ".yaml", ".yml", ".txt", ".json"}
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+PLACEHOLDER_RE = re.compile(r"\{\{(?:NOVEL_TITLE_YAML|NOVEL_TITLE|NOVEL_SLUG|DATE)\}\}")
 
 
 def parse_args() -> argparse.Namespace:
@@ -24,6 +26,7 @@ def parse_args() -> argparse.Namespace:
 
 def replace_placeholders(root: Path, title: str, slug: str, today: str) -> None:
     replacements = {
+        "{{NOVEL_TITLE_YAML}}": json.dumps(title, ensure_ascii=False),
         "{{NOVEL_TITLE}}": title,
         "{{NOVEL_SLUG}}": slug,
         "{{DATE}}": today,
@@ -32,8 +35,7 @@ def replace_placeholders(root: Path, title: str, slug: str, today: str) -> None:
         if not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES:
             continue
         text = path.read_text(encoding="utf-8")
-        for old, new in replacements.items():
-            text = text.replace(old, new)
+        text = PLACEHOLDER_RE.sub(lambda match: replacements[match.group(0)], text)
         path.write_text(text, encoding="utf-8")
 
 

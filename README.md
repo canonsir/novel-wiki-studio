@@ -2,6 +2,8 @@
 
 一个把“小说”当作可持续维护知识工程的 Git 仓库。它借鉴 Karpathy 的 **LLM Wiki**：不让模型每次从原稿重新推理，而是把原稿、访谈、灵感等不可变素材持续编译为结构化、相互链接、可审计的小说 Wiki；创作、扩写和视频改编都建立在这个 Wiki 上。
 
+项目也服务于“原创重构”：将用户自有或已获合法授权的待重构小说作为起点，从主题、人物、因果、场景和语言层面进行实质性再创作，最终形成由用户主导的原创小说成品。它不用于对第三方作品换词、调序、拼接或仿写后冒充原创。
+
 ## 核心分层
 
 1. **Raw（素材真相层）**：原始小说、灵感、设定、参考图；只追加，不覆盖。
@@ -20,10 +22,11 @@ python3 scripts/new_novel.py "小说名" --slug novel-slug
 
 1. 将原稿放入 `novels/novel-slug/raw/manuscript/`，不要直接修改原稿。
 2. 告诉 AI 按 `prompts/ingest-novel.md` 执行“导入”。
-3. 阅读 AI 生成的 `wiki/overview.md`、`wiki/index.md` 和首轮诊断报告。
-4. 确认题材、目标读者、叙事视角、尺度与结局边界。
-5. 按 `prompts/expand-chapter.md` 重构或扩写。
-6. 每次变更后运行：
+3. 在 `novel.yaml` 确认创作目标与来源权利状态。
+4. 阅读 AI 生成的 `wiki/overview.md`、`wiki/index.md` 和首轮诊断报告。
+5. 确认题材、目标读者、叙事视角、尺度与结局边界。
+6. 按 `prompts/expand-chapter.md` 重构或扩写。
+7. 每次变更后运行：
 
 ```bash
 python3 scripts/lint_wiki.py novels/novel-slug

@@ -1,6 +1,6 @@
 schema_version: 1
 id: {{NOVEL_SLUG}}
-title: "{{NOVEL_TITLE}}"
+title: {{NOVEL_TITLE_YAML}}
 status: setup
 language: zh-CN
 genre: []
@@ -9,6 +9,10 @@ target_platforms: []
 content_rating: "待确认"
 planned_length_words: null
 planned_volumes: null
+creative_goal:
+  outcome: original_novel
+  approach: "原创重构"
+  source_rights: "待确认"
 narrative:
   pov: "待确认"
   tense: "过去时或现在时，待确认"
