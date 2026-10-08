@@ -5,12 +5,13 @@
 ## 快速入口
 
 - 完整连续阅读稿：[`drafts/complete/qing-xian-meinv-laoshi-reconstructed-v1.md`](drafts/complete/qing-xian-meinv-laoshi-reconstructed-v1.md)
+- 全文校订阅读稿：[`drafts/complete/qing-xian-meinv-laoshi-reconstructed-v2-proofread.md`](drafts/complete/qing-xian-meinv-laoshi-reconstructed-v2-proofread.md)
 - LLM-Wiki：[`wiki/index.md`](wiki/index.md)
 - 项目控制台：[`00-admin/README.md`](00-admin/README.md)
 - 人物导航：[`02-characters/README.md`](02-characters/README.md)
 - 短剧导航：[`07-video/README.md`](07-video/README.md)
 
-完整阅读稿已补齐第98、100、102、557章并统一1–747章编号。当前版本是连续性重构基线，深度原创重写按批次持续替换。
+完整阅读稿已补齐第98、100、102、557章并统一1–747章编号。V2进一步清理标题、标点、错字和段落格式；剧情级深度原创重写按批次持续替换。
 
 ## 当前阶段
 

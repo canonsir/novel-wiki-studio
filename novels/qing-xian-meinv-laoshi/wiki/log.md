@@ -36,3 +36,10 @@
 - Updated: source rights, reconstruction decision, continuity status, project README
 - Contradictions: raw remains incomplete by design; reconstructed V1 has no missing or duplicate chapter numbers
 - Decisions needed: target platform, deep-rewrite batch order, final relationship roster and power ceiling
+
+## [2026-10-08] lint | 全文格式校订与中文知识视图重整
+- Sources: reconstructed V1; author request
+- Added: proofread V2, 747-chapter ledger, full editorial review
+- Updated: numbered directories now contain readable Chinese world, character, plot, timeline, scene and video content instead of link-only indexes
+- Contradictions: text-level fixes completed; plot-level reconstruction remains in 30 close-reading batches
+- Decisions needed: target platform, relationship end state, power ceiling, city fictionalization
