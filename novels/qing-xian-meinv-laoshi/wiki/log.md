@@ -43,3 +43,10 @@
 - Updated: numbered directories now contain readable Chinese world, character, plot, timeline, scene and video content instead of link-only indexes
 - Contradictions: text-level fixes completed; plot-level reconstruction remains in 30 close-reading batches
 - Decisions needed: target platform, relationship end state, power ceiling, city fictionalization
+
+## [2026-10-08] ingest | 全量实体拆页
+- Sources: proofread V2 full-text entity and occurrence scan
+- Added: 88 character pages, 25 faction pages, 22 location pages, 15 term pages, 25 major event pages and five Chinese catalogs
+- Updated: world, character and plotline entry pages; generated Wiki index
+- Contradictions: ambiguous aliases are merged only when identity is stable; low-frequency candidates remain subject to close-reading verification
+- Decisions needed: whether minor unnamed roles and one-scene businesses should receive persistent IDs
