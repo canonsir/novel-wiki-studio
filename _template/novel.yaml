@@ -1,0 +1,36 @@
+schema_version: 1
+id: {{NOVEL_SLUG}}
+title: "{{NOVEL_TITLE}}"
+status: setup
+language: zh-CN
+genre: []
+target_audience: "待确认"
+target_platforms: []
+content_rating: "待确认"
+planned_length_words: null
+planned_volumes: null
+narrative:
+  pov: "待确认"
+  tense: "过去时或现在时，待确认"
+  tone: []
+  pacing: "待确认"
+core:
+  logline: "待补充"
+  dramatic_question: "待补充"
+  theme_question: "待补充"
+  reader_promise: "待补充"
+boundaries:
+  must_keep: []
+  must_avoid: []
+  ending_constraints: []
+shared_universe: null
+source_of_truth:
+  raw_immutable: true
+  wiki_owner: llm
+  human_approval_required:
+    - core_theme
+    - protagonist_fate
+    - ending
+    - publication_risk
+created: {{DATE}}
+updated: {{DATE}}

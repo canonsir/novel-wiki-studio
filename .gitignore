@@ -1,0 +1,30 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.workbuddy-ai/
+.obsidian/workspace*.json
+.obsidian/cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Generated temporary files
+*.tmp
+*.bak
+reports/.cache/
+/outputs/
+
+# Large local media; use Git LFS or object storage when needed
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.psd
+*.aep
+
+# Keep placeholder files
+!.gitkeep
