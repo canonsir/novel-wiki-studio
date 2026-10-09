@@ -1,0 +1,19 @@
+{
+  "name": "@novel-wiki/flow-graph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@flowgram.ai/free-layout-editor": "1.0.15",
+    "@flowgram.ai/minimap-plugin": "1.0.15",
+    "lucide-react": "0.468.0",
+    "styled-components": "6.1.13"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

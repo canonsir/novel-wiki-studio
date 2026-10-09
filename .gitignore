@@ -17,6 +17,9 @@ __pycache__/
 *.bak
 reports/.cache/
 /outputs/
+/node_modules/
+/dist/
+/apps/story-graph/public/data/
 
 # Large local media; use Git LFS or object storage when needed
 *.mp4

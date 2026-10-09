@@ -17,20 +17,9 @@ novels/<slug>/
 │   ├── index.md
 │   ├── log.md
 │   ├── overview.md
-│   ├── characters/
-│   ├── factions/
-│   ├── locations/
-│   ├── world/
-│   ├── systems/
-│   ├── plot/
-│   ├── timeline/
-│   ├── events/
-│   ├── scenes/
-│   ├── relationships/
-│   ├── clues/
-│   ├── themes/
-│   ├── continuity/
-│   └── style/
+│   └── <分类目录>/        # 目录名可中文或英文，以 frontmatter type 为准
+├── graph/
+│   └── story-graph.json  # FlowGram 全量闭环图谱（生成文件）
 ├── drafts/              # 正文工作区
 ├── outputs/             # 视频脚本等衍生物
 ├── reports/             # 导入/质量/连续性报告
@@ -41,13 +30,30 @@ novels/<slug>/
 
 | 信息 | 权威页面 | 其他页面处理 |
 |---|---|---|
-| 人物身份、外形、欲望、秘密 | `wiki/characters/` | 链接引用 |
-| 日期与先后顺序 | `wiki/timeline/master-timeline.md` + 事件页 | 不重复定义 |
-| 世界规则/能力代价 | `wiki/systems/` | 场景页记录具体应用 |
-| 地理、距离、动线 | `wiki/locations/` + 世界地图页 | 场景页引用 |
-| 伏笔状态 | `wiki/clues/clue-ledger.md` | 章节页记录投放/回收 |
-| 文风、禁用习惯 | `wiki/style/style-bible.md` | 草稿遵循 |
+| 人物身份、外形、欲望、秘密 | `type: character` 页面 | 链接引用 |
+| 日期与先后顺序 | `type: timeline/event` 页面 | 不重复定义 |
+| 世界规则/能力代价 | `type: world/system` 页面 | 场景页记录具体应用 |
+| 地理、距离、动线 | `type: location` 页面 | 场景页引用 |
+| 伏笔状态 | `type: clue` 页面 | 章节页记录投放/回收 |
+| 文风、禁用习惯 | `type: style` 页面 | 草稿遵循 |
 | 用户选择 | `decisions/` | 通过 decision ID 引用 |
+
+目录名只服务人类导航，不承担类型语义。脚本必须读取 frontmatter `type`，
+不得写死 `characters/`、`人物/` 等具体目录名。
+
+## 闭环图谱
+
+每部小说必须生成 `graph/story-graph.json`。图谱至少包含：
+
+- `novel.yaml` 根节点和 Wiki 分类节点；
+- 全部正式 Wiki 实体页；
+- 完整正文的全部章节及章节顺序；
+- 正式重构章节及其原章节映射；
+- Wiki 双链、章节正文提及和显式时序关系；
+- Wiki、索引、章节、关联章节、节点、边和孤点覆盖率。
+
+`packages/novel-flow-graph/` 是公共 FlowGram 组件，`apps/story-graph/` 是统一查看器。
+图谱是 Wiki 与正文的派生视图，不是新的事实编辑入口。
 
 ## Wiki 页面最小结构
 

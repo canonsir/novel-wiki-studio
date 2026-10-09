@@ -36,5 +36,9 @@ source_of_truth:
     - protagonist_fate
     - ending
     - publication_risk
+graph:
+  required: true
+  engine: flowgram
+  output: graph/story-graph.json
 created: {{DATE}}
 updated: {{DATE}}

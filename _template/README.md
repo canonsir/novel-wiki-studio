@@ -13,3 +13,16 @@
 - [ ] 已生成首轮结构诊断
 - [ ] 已完成原创性检查，不是换词、调序、拼接或可识别模仿
 - [ ] 已运行 Wiki 静态检查
+- [ ] 已生成 `graph/story-graph.json` 并通过闭环检查
+
+## 闭环图谱
+
+每次新增或修改人物、地点、势力、事件、术语、章节后运行：
+
+```bash
+python3 scripts/build_story_graph.py novels/{{NOVEL_SLUG}}
+python3 scripts/lint_story_graph.py novels/{{NOVEL_SLUG}}
+```
+
+公共查看器通过 `npm run dev` 启动。图谱必须覆盖完整正文全部章节和全部正式
+Wiki 实体，且孤点为 0。

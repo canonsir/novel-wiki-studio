@@ -1,0 +1,23 @@
+{
+  "name": "novel-wiki-studio",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run graph:generate && npm run build --workspace @novel-wiki/story-graph",
+    "check": "biome check apps packages && npm run typecheck --workspace @novel-wiki/story-graph && python3 scripts/lint_story_graph.py novels/qing-xian-meinv-laoshi",
+    "dev": "npm run graph:generate && npm run dev --workspace @novel-wiki/story-graph",
+    "graph:generate": "python3 scripts/build_story_graph.py --all",
+    "graph:lint": "python3 scripts/lint_story_graph.py novels/qing-xian-meinv-laoshi"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "playwright": "^1.64.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -140,3 +140,10 @@
 - Removed: 旧的 `rewritten/` 和 `reconstructed-missing/` 子目录（已空）
 - Contradictions: wiki_backup_20261008/ 保持原样不动，其中 log.md 仍引用旧路径
 - Decisions needed: 旧路径引用仅存在于历史日志中，按"仅追加不覆写"原则保留
+
+## [2026-10-09] lint | 建立全小说闭环图谱
+- Sources: `novel.yaml`、正式 `wiki/`、完整校订稿、S1 重构章节
+- Added: FlowGram 图谱生成器、974 节点与 7639 条关系的 `graph/story-graph.json`
+- Updated: Wiki/章节覆盖检查；历史 Wiki 快照迁入 `99-archive/`
+- Contradictions: 无新增设定冲突
+- Decisions needed: 角色终局与核心关系仍按现有决策流程确认

@@ -30,6 +30,15 @@ python3 scripts/new_novel.py "小说名" --slug novel-slug
 
 ```bash
 python3 scripts/lint_wiki.py novels/novel-slug
+python3 scripts/build_story_graph.py novels/novel-slug
+python3 scripts/lint_story_graph.py novels/novel-slug
+```
+
+查看全小说闭环图谱：
+
+```bash
+npm install
+npm run dev
 ```
 
 ## 仓库结构
@@ -43,6 +52,8 @@ python3 scripts/lint_wiki.py novels/novel-slug
 ├── schema/                   # 页面元数据和 ID 约定
 ├── _template/                # 新小说模板
 ├── novels/                   # 每部小说一个独立 Wiki
+├── packages/novel-flow-graph # 公共 FlowGram 小说图谱组件
+├── apps/story-graph/         # 所有小说共用的图谱查看器
 └── scripts/                  # 建书、重建索引、静态检查
 ```
 
@@ -52,6 +63,7 @@ python3 scripts/lint_wiki.py novels/novel-slug
 - **事实、推断、提案分离**：Wiki 中明确标记 `confirmed / inferred / proposed / contradicted`。
 - **一个事实一个权威页面**：其他页面使用 `[[双链]]` 引用，避免复制后失同步。
 - **剧情变化必须传播**：改年龄、能力、动机或事件，就同步人物、时间线、事件、场景、伏笔和索引。
+- **图谱闭环可验证**：每部小说必须生成 FlowGram 图谱，覆盖全部 Wiki 实体、正文章节和重构章节，且孤点为零。
 - **细节服务戏剧目的**：不为“详细”而堆砌；每个细节至少服务人物、氛围、冲突、线索或可视化。
 - **人类掌舵**：重大主题、人物命运、价值判断与发布尺度必须由人确认。
 
