@@ -16,7 +16,7 @@
 ## B. 原稿导入
 
 - 全文通读 → 按场景切分 → 抽取实体/事件 → 构建时间线 → 建立因果与关系 → 记录伏笔 → 提炼风格 → 生成缺口清单。
-- 原文相互矛盾时同时保留，写入 `continuity/contradictions.md`。
+- 原文相互矛盾时同时保留，写入 `wiki/continuity/continuity-contradictions.md`。
 - 叙述者说法不等于世界事实；角色台词不等于事实。
 
 ## C. 章节重构

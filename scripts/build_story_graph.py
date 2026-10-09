@@ -32,8 +32,12 @@ KIND_MAP = {
     "timeline": "event",
     "system": "system",
     "world": "system",
+    "theme": "plot",
+    "continuity": "plot",
     "relationship": "plot",
     "clue": "plot",
+    "object": "object",
+    "reference": "other",
 }
 KIND_ORDER = [
     "root",
@@ -43,6 +47,7 @@ KIND_ORDER = [
     "faction",
     "location",
     "term",
+    "object",
     "system",
     "scene",
     "other",
@@ -86,6 +91,9 @@ def edge(source: str, target: str, relation: str, weight: int = 1) -> dict:
 
 
 def chapter_source(novel: Path) -> Path | None:
+    latest = novel / "drafts" / "manuscript" / "latest.md"
+    if latest.is_file():
+        return latest
     complete = novel / "drafts" / "complete"
     candidates = sorted(complete.glob("*.md"))
     proofread = [path for path in candidates if "proofread" in path.name]
@@ -195,6 +203,7 @@ def build(novel: Path) -> dict:
                         "faction": "组织势力",
                         "location": "地点",
                         "term": "专有名词",
+                        "object": "关键物件",
                         "plot": "剧情结构",
                         "system": "世界与规则",
                         "scene": "场景",
@@ -324,21 +333,36 @@ def build(novel: Path) -> dict:
         for count, _title, target_id in sorted(mentions, reverse=True)[:12]:
             graph_edges.append(edge(chapter_id, target_id, "正文提及", count))
 
-    rewritten = sorted((novel / "drafts" / "chapters").rglob("第*章*.md"))
-    for index, path in enumerate(rewritten):
-        match = REWRITE_RE.search(path.name)
-        number = int(match.group(1)) if match else None
-        rewrite_id = f"rewrite:{path.relative_to(novel).as_posix()}"
+    rewritten = []
+    for path in sorted((novel / "drafts" / "chapters").rglob("*.md")):
         text = path.read_text(encoding="utf-8")
+        if field(text, "status") == "deprecated" or field(text, "canon") == "deprecated":
+            continue
+        raw_number = field(text, "chapter")
+        heading_match = re.search(r"^#\s+第(\d+)章", text, re.MULTILINE)
+        filename_match = REWRITE_RE.search(path.name)
+        number = (
+            int(raw_number)
+            if raw_number.isdigit()
+            else int(heading_match.group(1))
+            if heading_match
+            else int(filename_match.group(1))
+            if filename_match
+            else None
+        )
+        if number is not None:
+            rewritten.append((path, text, number))
+    for index, (path, text, number) in enumerate(rewritten):
+        rewrite_id = f"rewrite:{path.relative_to(novel).as_posix()}"
         graph_nodes.append(
             node(
                 rewrite_id,
                 {
-                    "title": path.stem,
+                    "title": field(text, "title", path.stem),
                     "kind": "chapter",
                     "summary": summary(text),
-                    "canon": "proposed",
-                    "status": "rewritten",
+                    "canon": field(text, "canon", "proposed"),
+                    "status": field(text, "status", "rewritten"),
                     "sourcePath": path.relative_to(ROOT).as_posix(),
                     "chapter": number,
                     "phase": path.parent.name,
@@ -373,6 +397,7 @@ def build(novel: Path) -> dict:
             "wikiPages": len(pages),
             "indexedPages": len(indexed_pages),
             "chapters": len(chapters),
+            "rewrittenChapters": len(rewritten),
             "linkedChapters": linked_chapters,
             "nodes": len(graph_nodes),
             "edges": len(graph_edges),

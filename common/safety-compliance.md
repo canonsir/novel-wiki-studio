@@ -1,6 +1,6 @@
 # 内容安全、合规与版权基线
 
-> 最近核验：2026-10-08。此文件是创作风险清单，不替代法律意见。法律和平台规则会更新；正式发布前必须重新核验目标平台官方规则。
+> 最近核验：2026-10-09。此文件是创作风险清单，不替代法律意见。法律和平台规则会更新；正式发布前必须重新核验目标平台官方规则。
 
 ## 1. 最高原则
 
@@ -81,6 +81,7 @@
 ## 官方依据（核验时优先访问原文）
 
 - 中国政府网：《网络信息内容生态治理规定》，2019-12-15 成文，2020-03-01 施行：https://www.gov.cn/zhengce/zhengceku/2020-11/25/content_5564110.htm
-- 番茄小说：《番茄平台内容发布规范》，页面时间 2025-02-26：https://fanqienovel.com/writer/zone/article/7237084151751376957
-- 番茄小说：《2026年6月番茄平台账号违规处罚公告》，2026-07-07：https://fanqienovel.com/writer/zone/article/7659735436356501528
+- 番茄小说：《平台不允许发布的内容》，2022-07-26更新：https://fanqienovel.com/writer/zone/help/article?rank1=10019&rank2=10061&rank3=0
+- 番茄小说：《番茄平台内容发布规范》，2025-02-26更新：https://fanqienovel.com/writer/zone/help/article?rank1=10019&rank2=10222&rank3=0
+- 红果漫剧：《红果漫剧素材规范》，revision 1059：https://bytedance.larkoffice.com/wiki/QrgPwp5LVisuhykz5T5cXXLonY1
 - 起点作家专区相关审核说明会随时间调整，发布前从官方作家后台重新核验：https://write.qq.com/

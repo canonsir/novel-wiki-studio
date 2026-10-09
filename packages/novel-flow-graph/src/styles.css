@@ -173,6 +173,10 @@
   border-left-color: #32817b;
 }
 
+.nfg-node--object {
+  border-left-color: #94652f;
+}
+
 .nfg-node--chapter {
   border-left-color: #7a808c;
 }

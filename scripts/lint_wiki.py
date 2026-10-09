@@ -15,6 +15,7 @@ WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
 LOG_RE = re.compile(r"^## \[\d{4}-\d{2}-\d{2}\] (ingest|query|expand|lint|decision|setup) \| .+")
 ID_RE = re.compile(r"^id:\s*[\"']?([^\"'\n]+)", re.MULTILINE)
 KEY_RE = re.compile(r"^([a-zA-Z_][a-zA-Z0-9_-]*):", re.MULTILINE)
+KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
 @dataclass
@@ -79,7 +80,18 @@ def main() -> int:
                     issues.append(Issue("ERROR", page, f"missing frontmatter field: {key}"))
                 match = ID_RE.search(fm)
                 if match:
-                    ids[match.group(1).strip()].append(page)
+                    entity_id = match.group(1).strip()
+                    ids[entity_id].append(page)
+                    if not KEBAB_RE.fullmatch(entity_id):
+                        issues.append(Issue("ERROR", page, f"id is not kebab-case: {entity_id}"))
+                    if page.stem != entity_id:
+                        issues.append(
+                            Issue(
+                                "ERROR",
+                                page,
+                                f"filename must match id: expected {entity_id}.md",
+                            )
+                        )
 
         for raw_link in WIKILINK_RE.findall(text):
             target = resolve_link(wiki, raw_link)

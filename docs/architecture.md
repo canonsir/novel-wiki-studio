@@ -17,10 +17,21 @@ novels/<slug>/
 │   ├── index.md
 │   ├── log.md
 │   ├── overview.md
-│   └── <分类目录>/        # 目录名可中文或英文，以 frontmatter type 为准
+│   ├── characters/
+│   ├── factions/
+│   ├── locations/
+│   ├── events/
+│   ├── scenes/
+│   ├── objects/
+│   ├── clues/
+│   ├── terms/
+│   └── <其他类型目录>/
 ├── graph/
 │   └── story-graph.json  # FlowGram 全量闭环图谱（生成文件）
-├── drafts/              # 正文工作区
+├── drafts/
+│   ├── manuscript/
+│   │   └── latest.md     # 唯一完整阅读稿
+│   └── chapters/         # 六部最新分章重构稿
 ├── outputs/             # 视频脚本等衍生物
 ├── reports/             # 导入/质量/连续性报告
 └── decisions/           # 用户确认的关键决策
@@ -38,8 +49,8 @@ novels/<slug>/
 | 文风、禁用习惯 | `type: style` 页面 | 草稿遵循 |
 | 用户选择 | `decisions/` | 通过 decision ID 引用 |
 
-目录名只服务人类导航，不承担类型语义。脚本必须读取 frontmatter `type`，
-不得写死 `characters/`、`人物/` 等具体目录名。
+目录使用规范英文类型名，页面文件名与稳定 ID 一致；中文标题写在 frontmatter。
+脚本仍必须读取 frontmatter `type`，不能把目录名当作唯一事实来源。
 
 ## 闭环图谱
 

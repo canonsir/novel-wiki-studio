@@ -1,11 +1,11 @@
 # Decisions
 
-只记录用户明确确认的关键选择。文件名：`DEC-YYYYMMDD-short-title.md`。
+只记录用户明确确认的关键选择。文件名：`dec-yyyymmdd-short-title.md`。
 
 模板：
 
 ```md
-# DEC-YYYYMMDD｜标题
+# dec-yyyymmdd｜标题
 - Status: accepted / superseded
 - Context: 为什么需要决定
 - Options: 评估过的方案

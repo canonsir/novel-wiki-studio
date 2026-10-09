@@ -10,6 +10,7 @@ export type NovelNodeKind =
   | 'faction'
   | 'location'
   | 'term'
+  | 'object'
   | 'chapter'
   | 'scene'
   | 'plot'
@@ -46,6 +47,7 @@ export interface NovelGraphDataset {
     wikiPages: number;
     indexedPages: number;
     chapters: number;
+    rewrittenChapters: number;
     linkedChapters: number;
     nodes: number;
     edges: number;

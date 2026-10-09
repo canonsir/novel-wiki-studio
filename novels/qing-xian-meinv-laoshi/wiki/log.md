@@ -147,3 +147,45 @@
 - Updated: Wiki/章节覆盖检查；历史 Wiki 快照迁入 `99-archive/`
 - Contradictions: 无新增设定冲突
 - Decisions needed: 角色终局与核心关系仍按现有决策流程确认
+
+## [2026-10-09] decision | 批准并执行 V4 全书换名迁移
+- Sources: 用户确认“批准 V4 方案，开始批量执行迁移”；`reports/full-renaming-plan-v4-20261009.md`
+- Added: `decisions/dec-20261009-013-v4-renaming-approval.md`；`characters/char-zhang-lieshan.md`（张家族长，姓名 proposed）；`locations/loc-chen-family-orchard.md`（陈家果园，proposed）
+- Updated: Wiki 实体 ID/双链/frontmatter/标签与正式中文名；物理重命名 88 个文件（74 人物 + 1 势力 + 1 物件 + 12 事件）；`drafts/chapters/` 全部重构章节；`scripts/build_framework_graphs.py`（含“哈察将军”统一）；`novel.yaml`（dramatic_question 改陈浩南）；dec-006/007 追加 supersede，dec-012 与 V4 方案状态升级 approved/confirmed
+- Contradictions:
+  - 张震关系：原稿第747章“你有个讨厌的儿子”确认其为族长之子；旧推断“支脉/非继承人”（第331章）标记 contradicted，以原文为准，待查生母身份
+  - V4 映射漏项“林青朝→林寒”已补替换；char-lin-han 页正文按迁移说明保留旧名
+- Decisions needed: “张烈山”姓名确认；霍凯/霍寒之父正式名；果园方位与路程
+
+## [2026-10-09] lint | V4 迁移后图谱与 Wiki 校验通过
+- Sources: `scripts/rebuild_index.py`、`build_story_graph.py`、`build_framework_graphs.py`、`lint_wiki.py`、`lint_story_graph.py`
+- Added: 重建 `graph/story-graph.json`（1029 节点、5144 关系、747 章、22 重构章、0 孤点）与 7 张框架图谱（apps/story-graph/public/data）
+- Updated: `wiki/index.md` 及分类 _index
+- Contradictions: 无
+- Decisions needed: 无
+- Results: Wiki 249 内容页，lint 0 errors / 0 warnings；图谱校验 closed
+
+## [2026-10-09] ingest | 用户补齐丢失章节并回退兜底文
+- Sources: `raw/情陷美女老师_全文原稿.md`、`raw/情陷美女老师_全文原稿.txt`（均 747 章完整）
+- Added: 无（仅回退 `drafts/manuscript/latest.md` 中的 15 章兜底文）
+- Updated:
+  - `drafts/manuscript/latest.md`：第 98、100、102、141、187、347、489、542、557、587、590、614、637、660、669 章按原稿替换，总字数回到 747 章完整版基线
+  - `wiki/structure/structure-novel-volumes.md`：S2 第 98/100/102 章与 S5 第 557 章爆点描述改为符合原稿事实（557 为“五千万换人+手心手背”而非之前兜底的“四女失联”）
+  - `wiki/continuity/continuity-contradictions.md`：CON-001 升级为 resolved
+  - `reports/ingest/2026-10-08-source-inventory.md`：第 98/100/102/557 行“本站缺失”标注替换为原稿标题
+  - `reports/reconstruction-status.md`：缺失正文修复行、S2/S5 行同步
+  - 索引、故事图谱与 7 张框架图谱重建
+- Contradictions: 旧快照 `raw/manuscript/SRC-20261008-001-original-manuscript.md` 仍只保留 739 章，按只读规约不动；差异说明见 CON-001
+- Decisions needed: 无
+- Results: 1029 节点 / 5136 关系 / 0 孤点；Wiki lint 0 errors / 0 warnings
+
+## [2026-10-09] lint | 清理兜底 bridge 并修订图谱过滤
+- Sources: 用户指示删除 decisions 原稿副本、兜底稿标 deprecated；一次性提交推送
+- Added: 无
+- Updated:
+  - 删除 `decisions/情陷美女老师_全文.md`（原稿副本，不属于决策）
+  - 第 98/100/102/557 章 `continuity-bridge` 四份兜底稿改为 `status: deprecated / canon: deprecated`，顶部加废弃说明，`replaces_raw_chapter` 改为 `superseded_by_raw_chapter`
+  - `scripts/build_story_graph.py`、`scripts/lint_story_graph.py` 新增 deprecated 过滤
+  - 重建图谱：1025 节点 / 5128 关系 / 18 重构章 / 0 孤点 / closed
+- Contradictions: 无
+- Decisions needed: 无

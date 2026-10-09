@@ -18,7 +18,7 @@ tags: [protagonist]
 ## 必填字段
 
 - `id`：仓库内唯一、稳定，重命名标题时不改 ID。
-- `type`：character/location/event/scene/faction/system/theme/clue/timeline/style/report/decision。
+- `type`：character/location/event/scene/faction/system/theme/clue/object/timeline/style/structure/continuity/reference/report/decision。
 - `title`：人类可读标题。
 - `status`：active/deprecated/merged/archived。
 - `canon`：confirmed/inferred/proposed/contradicted。

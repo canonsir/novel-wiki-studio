@@ -47,6 +47,7 @@ const KIND_LABELS: Record<string, string> = {
   faction: '势力',
   location: '地点',
   term: '术语',
+  object: '物件',
   chapter: '章节',
   scene: '场景',
   plot: '剧情',
@@ -265,7 +266,8 @@ export function NovelFlowGraph({
             <h1>{data.novel.title}</h1>
             <p>
               {coverage.nodes} 节点 · {coverage.edges} 关系 ·{' '}
-              {coverage.chapters} 章 · {coverage.orphanNodes} 孤点
+              {coverage.chapters} 章 · {coverage.rewrittenChapters} 重构 ·{' '}
+              {coverage.orphanNodes} 孤点
             </p>
           </div>
         </div>
