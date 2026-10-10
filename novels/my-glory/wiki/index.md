@@ -107,6 +107,7 @@
 - [[world/命名候选·山海经与修炼体系|命名候选 & 功法参考]] — 山海经意象 + 玄幻武侠修炼体系的候选集 — proposed
 - [[world/敏感红线预防清单·开写前|敏感红线预防清单（开写前）]] — S1 c001 开写前的收敛规则 — proposed
 - [[world/爽点节奏保障方案|爽点节奏保障方案]] — 四联坐标 + 单章爽点模板 + 画面感代偿笔法库 — proposed
+- [[world/章节连贯性与完整性守则|章节连贯性与完整性守则·开写铁律]] — 吸取归档版 7 条教训；10 项 lint — proposed
 
 ## Plot & Timeline
 
@@ -114,6 +115,7 @@
 - [[plot/structure-plot|《我的荣耀》分卷骨架]] — S1-S6 卷级骨架 — proposed
 - [[plot/短剧Arc分段骨架|短剧 Arc 分段骨架]] — S1-S6 拆为 18 Arc / 文件夹映射 — proposed
 - [[plot/arcs/Arc1-女神与仙人跳-图谱|Arc 1 女神与仙人跳 剧情图谱]] — c001-c030 / mermaid — proposed
+- [[plot/arcs/Arc1-scene-outline-c001-c030|Arc 1 scene-level 细纲（c001-c030）]] — 30 章开写路线图 — proposed
 - [[plot/S5-S6结尾重构·方向简报|S5-S6 结尾重构·方向简报]] — DEC-006 三方向 pitch — accepted(方向C)
 
 ## Relationships

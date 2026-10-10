@@ -471,3 +471,28 @@
 - Contradictions: 无
 - Decisions needed:
   - 用户在 L/M/N/O/20 候选自选/自定义 中选小说新名
+
+## [2026-10-10] setup | 章节连贯性守则 + Arc 1 scene-level 细纲（c001-c030 开写路线图）
+
+- Sources:
+  - 用户决议："先完成小说整部章节的重构，最后再定名字；一定要章节连贯性和完整性，不要出现归档版的突然结束、衔接奇怪问题，需要阅读丝滑、故事完整、逻辑严谨、爽文"
+  - 归档版教训：novels/.archive/qing-xian-meinv-laoshi-20261010/drafts/chapters/s1-boundary-beyond/c001-sou-meeting.md + c002-chase.md
+- Added:
+  - wiki/world/章节连贯性与完整性守则.md：开写铁律
+    * 归档版 7 条教训复盘（开场铺垫过长 / 章末突然断开 / 章首承接断裂 / 场景切换无锚点 / 独白过多 / 事件逻辑撕裂 / 爽点锚点缺失）
+    * 10 项每章 lint 清单
+    * 承接 lint + 推进 lint 跨章规则
+    * 每章结构模板 3000-5000 字
+    * 开写前"三个必问"（必答才能开写）
+  - wiki/plot/arcs/Arc1-scene-outline-c001-c030.md：Arc 1 开写路线图
+    * 30 章每章 1 段梗概 + 承接钩子 + 场景级拆解
+    * 分 4 幕（相遇反杀 / 退学爸的号码 / 温景同病倒 / 500 万代偿退学）
+    * 每章爽点锚点统计（Arc 1 公开打脸 7 次 / 温书宁独家 8 场）
+    * Arc 1 → Arc 2 过渡设计（姑奶奶登场）
+    * Arc 1 伏笔种收束表（10 条）
+    * author-agent 开写流程说明
+- Updated:
+  - wiki/index.md：挂两张新页
+- Contradictions: 无
+- Decisions needed:
+  - 开 c002（按细纲）
