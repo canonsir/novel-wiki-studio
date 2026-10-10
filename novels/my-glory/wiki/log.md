@@ -98,3 +98,19 @@
   - wiki/terms/嗖匹配.md（过渡用名废弃）
 - Contradictions: 无
 - Decisions needed: 本条决议已完成；REP-003 §3 的另外 4 项（青帮 / 天下会 / 天一集团 / 神龙基地）仍挂起，S2 前必须决议青帮
+
+## [2026-10-10] setup | 青帮改名候选扩充 + 开写前敏感红线预防清单
+
+- Sources:
+  - common/constraints/national-redlines-checklist.md 全量
+  - common/constraints/platform-fanqie-checklist.md / platform-redfruit-checklist.md
+  - raw/manuscript/我的荣耀_原稿封板版.md 全量敏感关键词扫描
+- Added:
+  - wiki/world/敏感红线预防清单·开写前.md：按 L1 不可触碰 / L2 必须收敛 / L2.5 风险场景三层整理；逐条给原稿样本 + 收敛策略 + 禁区示例 + 保留强度；并提供第 1-3 章 Hook 收敛样例
+  - reports/REP-20261010-004-qingbang-rename.md：青帮改名候选扩充 12 个 + 我的新推荐 4 个（相柳堂 / 大通社 / 乾字门 / 河山会）
+- Updated:
+  - wiki/index.md 挂上两份新页
+- Contradictions: 无
+- Decisions needed:
+  - 青帮改名：请从 REP-004 的 12 候选 or 4 推荐里挑选，或给自己的方案
+  - 敏感红线清单仍 proposed，S1 开写前请你快速过一遍重点条目（见 §4 第 1-3 章 Hook 收敛样例）

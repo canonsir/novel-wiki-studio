@@ -102,6 +102,7 @@
 
 - [[world/world-bible|世界圣经]] — proposed
 - [[world/命名候选·山海经与修炼体系|命名候选 & 功法参考]] — 山海经意象 + 玄幻武侠修炼体系的候选集 — proposed
+- [[world/敏感红线预防清单·开写前|敏感红线预防清单（开写前）]] — S1 c001 开写前的收敛规则 — proposed
 
 ## Plot & Timeline
 
