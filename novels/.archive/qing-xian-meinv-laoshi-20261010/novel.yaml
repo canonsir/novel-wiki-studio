@@ -1,7 +1,9 @@
 schema_version: 1
 id: qing-xian-meinv-laoshi
 title: "从网吧少年到帝都南哥"
-status: rewriting
+status: archived
+archived_on: 2026-10-10
+archived_reason: "暂停改编，优先完善 harness；留存作为后续参考样本"
 language: zh-CN
 genre: ["都市", "逆袭", "江湖", "后宫", "热血"]
 target_audience: "成年男性爽文读者"

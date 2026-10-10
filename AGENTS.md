@@ -55,12 +55,12 @@
 扩写前必须读取：该书 `novel.yaml`、`overview`、相关人物/事件/场景、主时间线、风格圣经、伏笔账本、用户已确认决策。
 
 所有小说扩写、续写和重构任务必须调用项目技能
-`.trae/skills/chinese-novelist/`，并将其“展示而非讲述、冲突驱动剧情、章末悬念”
-作为最低写作标准。不得绕过该技能直接批量生成正文。
+`.trae/skills/writing/chinese-novelist/`，并由 author-agent（见 `common/agents/author-agent.md`）持有调用权，
+将其"展示而非讲述、冲突驱动剧情、章末悬念"作为最低写作标准。不得绕过该技能直接批量生成正文。
 
-重构方案定稿前和正文验收前，必须调用项目技能 `.trae/skills/grill-me/`
-执行逻辑压力测试。至少质询：人物为何此刻行动、资源从何而来、对手为何不采用更优解、
-胜利付出什么代价、信息如何被得知、前后状态是否连续。能从代码库和 Wiki 找到答案的，
+重构方案定稿前和正文验收前，必须调用项目技能 `.trae/skills/review/grill-me/`
+执行逻辑压力测试（见 `common/agents/grill-agent.md`）。至少质询：人物为何此刻行动、资源从何而来、对手为何不采用更优解、
+胜利付出什么代价、信息如何被得知、前后状态是否连续。能从代码库、Wiki 和 `common/knowledge-base/` 找到答案的，
 先自行检索，不把可查问题推给用户；无法确认的关键分支登记为 `proposed` 或待确认决策。
 
 重构任务必须先确认 `novel.yaml` 中的创作目标与来源权利状态。以待重构稿为起点时，应明确“保留什么、为何保留、重建什么”，并持续评估成品是否已形成独立的主题表达、人物选择、因果链、场景组织和叙述语言。
@@ -134,3 +134,85 @@
 ## 12. 完成定义
 
 一次任务只有在以下事项完成后才算结束：正文/产物已写、受影响 Wiki 已同步、索引已更新、图谱已重建且闭环检查通过、日志已追加、静态检查已运行、未解决项已列出。
+
+## 13. Agent 分工与知识库
+
+### 13.1 多视角 Agent
+
+本仓用"视角切换"而非"全能单一 Agent"运行。所有 Agent 规约见 `common/agents/`：
+
+| Agent | 视角 | 启用时机 |
+|---|---|---|
+| author-agent | 主笔 | 新章节撰写、润色 |
+| editor-agent | 故事编辑 | 方案评审、arc 规划 |
+| continuity-agent | 连续性编辑 | 事实 / 时间线 / 伤势一致性 |
+| reviewer-agent | 平台审核员 | 发布前合规闸门 |
+| reader-agent | 读者/观看者 | 爽点兑现 / 弃读点预测 |
+| adapter-agent | 短剧改编 | 小说 → 分镜 → AI 素材 |
+| grill-agent | 质询者 | 关键决策定稿前的压力测试 |
+
+**规则**：
+- 一个任务一次只以一个 Agent 身份工作。
+- 切换 Agent 必须显式声明。
+- Agent 之间通过 Wiki 与 decisions 交接，不走聊天记忆。
+- 冲突优先级：法律与安全 > 已确认用户决策 > Agent 内部判断。
+
+### 13.2 技能分组（`.trae/skills/`）
+
+| 分组 | 用途 | 对应 Agent |
+|---|---|---|
+| `writing/` | 创作 | author-agent |
+| `review/` | 审查 / 质询 | editor / continuity / reviewer / reader / grill |
+| `short-drama/` | 短剧改编 | adapter-agent |
+
+Skill 不自己揽活，由 Agent 调用。详见 `.trae/skills/README.md`。
+
+### 13.3 真实世界知识库（`common/knowledge-base/`）
+
+虚实结合是本仓的核心定位。所有涉及真实世界的描写（历史 / 地理 / 哲学 / 江湖 / 法律 / 武学 / 医药 / 枪械）必须先查知识库：
+
+```
+knowledge-base/
+├── china/
+│   ├── philosophy/     # 儒释道法 / 心学 / 兵家
+│   ├── history/        # 清末 / 民国 / 建国初 / 改开
+│   ├── geography-folk/ # 真实→虚构映射、分区民俗
+│   ├── jianghu/        # 门派 / 会党 / 礼节
+│   └── law-enforcement/# 公安 / 司法 / 扫黑
+├── world/
+│   ├── religion-philosophy.md
+│   ├── history-overview.md
+│   └── cultural-tropes.md
+└── crafts/
+    ├── martial-arts.md
+    ├── weapons.md
+    ├── medicine-pharmacology.md
+    └── finance-business.md
+```
+
+**硬约束**：
+- **真实地名必须虚构化**：北京→帝都、上海→魔都、广州→南都、重庆→雾都、成都→蓉城……完整表见 `common/knowledge-base/china/geography-folk/real-to-fictional-map.md`。
+- **真实在世人物**：不虚构其言行；可借用公认史实。
+- **真实机构 / 品牌**：模糊化到行业或虚构化。
+- **武力 / 伤势 / 恢复**：遵守 `crafts/martial-arts.md` 和 `crafts/medicine-pharmacology.md` 的硬上限。
+- **武器 / 爆炸物 / 毒物**：严禁可直接复刻细节，参考 `crafts/weapons.md` 与 `crafts/medicine-pharmacology.md`。
+
+小说 Wiki 内部**不得复制**知识层事实，只引用：`参见 common/knowledge-base/china/philosophy/wangyangming.md`。
+
+### 13.4 约束 checklist（`common/constraints/`）
+
+发布前必须勾选：
+
+- `national-redlines-checklist.md`：国家网络内容红线。
+- `platform-fanqie-checklist.md`：番茄小说。
+- `platform-redfruit-checklist.md`：红果 AI 短剧 / 投放素材。
+- `genre-profiles/urban-male.md` / `xianxia.md` / `romance-female.md`：题材 profile（创作时参照）。
+
+### 13.5 新书立项必走流程
+
+1. 从 `_template/` 新建 `novels/<id>/`，填写 `novel.yaml`（含 `kb_dependencies` 列出要吃哪些 kb 条目）。
+2. 选择题材 profile → 读完对应 `genre-profiles/<type>.md`。
+3. editor-agent 搭 arc → grill-agent 压测 → 用户确认后 author-agent 开写。
+4. 每章完成后：continuity-agent 核事实 → reader-agent 评爽点 → reviewer-agent 过 checklist → 更新 Wiki / log / 图谱。
+5. 短剧改编阶段切换 adapter-agent，走 `platform-redfruit-checklist.md`。
+

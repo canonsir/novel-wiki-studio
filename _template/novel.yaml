@@ -40,5 +40,15 @@ graph:
   required: true
   engine: flowgram
   output: graph/story-graph.json
+# 该书需要引用的真实世界知识库条目；首次创作前必须审读。
+kb_dependencies: []
+# 示例：
+#   - common/knowledge-base/china/geography-folk/real-to-fictional-map.md
+#   - common/knowledge-base/china/philosophy/wangyangming.md
+#   - common/knowledge-base/china/jianghu/martial-schools.md
+#   - common/knowledge-base/crafts/weapons.md
+# 本书使用的题材 profile（选一到两个）：
+genre_profile: null
+# 示例：common/constraints/genre-profiles/urban-male.md
 created: {{DATE}}
 updated: {{DATE}}

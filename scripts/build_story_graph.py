@@ -433,7 +433,11 @@ def main() -> int:
     parser.add_argument("--all", action="store_true", help="Build every novel under novels/")
     args = parser.parse_args()
     targets = (
-        sorted(path for path in NOVELS.iterdir() if (path / "novel.yaml").is_file())
+        sorted(
+            path
+            for path in NOVELS.iterdir()
+            if (path / "novel.yaml").is_file() and not path.name.startswith(".")
+        )
         if args.all
         else [args.novel.resolve() if args.novel else None]
     )
