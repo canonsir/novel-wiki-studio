@@ -22,6 +22,7 @@
 - [[characters/宁云疏|宁云疏]] — 忠信帮遗孀 / 蓉城·城东精神象征 — proposed
 - [[characters/洪四海|洪四海]] — 引路人 / 蓉城·城东海迪老板 / 忠信帮现任堂主 — proposed
 - [[characters/温书宁|温书宁]] — proposed
+- [[characters/温景同|温景同]] — 温书宁父亲 / S1 叙事麦高芬 500 万赌债 — proposed
 - [[characters/秦枭|秦枭]] — 帝都大反派 / 秦家外脉少主 — proposed
 - [[characters/程星野|程星野]] — proposed
 - [[characters/穆清|穆清]] — 蓉城女警 / 法律与江湖的灰度桥 — proposed
@@ -125,6 +126,7 @@
 
 - [[continuity/continuity-contradictions|矛盾登记]] — proposed
 - [[continuity/continuity-naming-map|封板稿→改编版 命名映射（内部对账）]] — proposed
+- [[continuity/人物称谓全索引·防漏改|人物称谓全索引·防漏改]] — 别名/外号/简称 lint 对照表（强制） — proposed
 
 ## Timeline
 

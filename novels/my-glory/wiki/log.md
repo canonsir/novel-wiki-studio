@@ -151,3 +151,30 @@
 - Decisions needed:
   - author-agent 开写时必须 reference 爽点节奏方案 + 敏感红线清单两份
   - reviewer-agent 发布前对照"画面感收敛是否到位 / 爽点节奏是否达标"
+
+## [2026-10-10] expand | S1 c001 正式开写 + 人物称谓防漏改索引
+
+- Sources:
+  - 用户决议：进入正式改编；特别要求"上下文/钩子/伏笔要逻辑严谨+人物别名(小名/外号/简称)不得漏改"
+  - raw/manuscript/我的荣耀_原稿封板版.md 第 1 章原稿
+  - DEC-20261010-005 创作定调（画面感 + 爽文四联）
+- Added:
+  - wiki/continuity/人物称谓全索引·防漏改.md：按主角/亲族/女主/兄弟/反派/鬼组/组织/地点 列全称谓 + 禁止词 + 乱入高危词清单；S1 定稿前必 0 命中的禁词 grep 清单
+  - wiki/characters/温景同.md：温书宁父亲人物页（新定名）；S1 麦高芬 500 万赌债载体；下毒戒毒走关门镜头
+  - drafts/chapters/s1-city-south/c001-漂流瓶.md：S1 第 1 章正式改编稿 3700 字
+- Updated:
+  - drafts/manuscript/latest.md：S1 第 1 章正文入库
+  - wiki/characters/温书宁.md：父亲名定为"温景同"（原"温父"占位名废弃）；延伸链指向新页
+  - wiki/index.md 挂新页（Continuity + Characters 段）
+  - graph/story-graph.json 重建（100 nodes / 108 edges / 1 chapter / 0 orphans / closed）
+- Contradictions: 无
+- Decisions needed:
+  - c002 续写方向：温书宁递的叠纸条内容揭开 + 咖啡厅里"九头兽戒指"反派（厉擎苍）露面
+  - 伏笔链"九头兽戒指"（相柳意象）与"北辰 + 杀破狼"命盘主轴的衔接方式（editor-agent 待压测）
+- Rush anchors（c001 落稿清单）:
+  - [x] 画面感代偿：仙人跳威胁用"折叠刀侧挎包 + 后门绕前门 + 五秒停顿"外化（原稿裸写被改）
+  - [x] 女性物化：主角内心独白对温书宁 0 处物化（与原稿第 1 章对比重大改动）
+  - [x] 粗口上限：全章仅"我去年买了个表"口头禅 4 次；无三字性器官型辱骂
+  - [x] 爽点锚点 ≥ 3：开场身份错位 / 识破仙人跳 / 认出美女老师 / 发现九头兽戒指
+  - [x] 章末钩子：九头兽戒指（下章揭厉擎苍）
+  - [x] 新名 lint：正文零命中禁词（对账说明段除外）
