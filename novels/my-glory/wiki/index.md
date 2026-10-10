@@ -101,6 +101,7 @@
 ## World & Systems
 
 - [[world/world-bible|世界圣经]] — proposed
+- [[world/命名候选·山海经与修炼体系|命名候选 & 功法参考]] — 山海经意象 + 玄幻武侠修炼体系的候选集 — proposed
 
 ## Plot & Timeline
 

@@ -57,7 +57,7 @@ tags: [knowledge-base, <分类>]
 knowledge-base/
 ├── README.md                    # 本文
 ├── china/                       # 中国文化圈
-│   ├── philosophy/              # 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水
+│   ├── philosophy/              # 儒释道法 / 心学 / 兵家 / 诸子 / 神话 / 山海经
 │   │   ├── confucianism.md
 │   │   ├── buddhism.md
 │   │   ├── daoism.md
@@ -65,7 +65,8 @@ knowledge-base/
 │   │   ├── wangyangming.md
 │   │   ├── bingjia-strategy.md
 │   │   ├── mohism-and-others.md
-│   │   └── mythology-and-folk-belief.md
+│   │   ├── mythology-and-folk-belief.md
+│   │   └── shanhaijing.md
 │   ├── history/                 # 古代 / 清末 / 民国 / 建国改开 / 当代
 │   │   ├── ancient-dynasties.md
 │   │   ├── late-qing.md
@@ -100,7 +101,8 @@ knowledge-base/
     ├── vehicles.md
     ├── luxury-fashion.md
     ├── art-antiques.md
-    └── technology-hacking.md
+    ├── technology-hacking.md
+    └── xianxia-xuanhuan-cultivation.md
 ```
 
 ## 当前成熟度
@@ -108,12 +110,12 @@ knowledge-base/
 | 条目 | 状态 | 备注 |
 |---|---|---|
 | `china/geography-folk/real-to-fictional-map.md` | active | 全局硬约束 |
-| `china/philosophy/*` | active | 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水 共 8 篇 |
+| `china/philosophy/*` | active | 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水 / 山海经 共 9 篇 |
 | `china/history/*` | active | 古代 / 清末 / 民国 / 建国改开 / 当代 共 5 篇 |
 | `china/geography-folk/*` | active | 映射 / 民俗 / 节气 / 茶酒 共 4 篇 |
 | `china/jianghu/*` | active | 门派 / 会党 / 礼节 / 地下经济 共 4 篇 |
 | `china/law-enforcement/*` | active | 扫黑 / 公安日常 共 2 篇 |
 | `world/*` | active | 宗教 / 世界史 / 跨文化原型 共 3 篇 |
-| `crafts/*` | active | 武学 / 枪械 / 医药 / 医疗行业 / 军事 / 影视娱乐 / 金融 / 车辆 / 奢侈品 / 古玩 / 科技 共 11 篇 |
+| `crafts/*` | active | 武学 / 枪械 / 医药 / 医疗行业 / 军事 / 影视娱乐 / 金融 / 车辆 / 奢侈品 / 古玩 / 科技 / 玄幻仙侠修炼 共 12 篇 |
 
 **约定**：stub 条目的 `TODO:` 区标注"用到再补"是允许的，但首次需要用到时**必须**先写满再写入小说。

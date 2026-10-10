@@ -64,3 +64,18 @@
   - 全 wiki 与 decisions 中的 wikilink 与路径引用同步到中文
   - wiki/index.md 重建到中文文件名
 - Rationale: 中文文件名提升人工 review 效率；kebab-id 继续用作图谱和脚本的稳定键
+
+## [2026-10-10] ingest | 山海经与玄幻武侠修炼知识库 + 命名候选桥页
+
+- Sources:
+  - common/knowledge-base/china/philosophy/shanhaijing.md（新增，九卷结构 / 主要神祇 / 异兽 / 地名 / 可取材命名清单）
+  - common/knowledge-base/crafts/xianxia-xuanhuan-cultivation.md（新增，境界 / 功法 / 门派 / 法宝 / 丹药 / 阵法 / 剑意 骨架）
+- Added:
+  - wiki/world/命名候选·山海经与修炼体系.md：桥页，把 kb 的素材连接到本书人物外号 / 组织堂口 / 功法境界 / 法宝物件候选
+- Updated:
+  - novel.yaml kb_dependencies +shanhaijing +xianxia-xuanhuan-cultivation（共 23 条）
+  - common/knowledge-base/README.md 目录树与成熟度表（philosophy 9 篇 / crafts 12 篇）
+  - AGENTS.md §13.3 目录
+  - wiki/index.md 加挂新桥页
+- Contradictions: 无
+- Decisions needed: 候选集中具体采信哪些外号 / 堂口名 / 功法名需用户 ACK 或 editor-agent 评审后入人物页 / 术语页

@@ -176,7 +176,7 @@ Skill 不自己揽活，由 Agent 调用。详见 `.trae/skills/README.md`。
 ```
 knowledge-base/
 ├── china/
-│   ├── philosophy/     # 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水 (8)
+│   ├── philosophy/     # 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水 / 山海经 (9)
 │   ├── history/        # 古代 / 清末 / 民国 / 建国改开 / 当代 (5)
 │   ├── geography-folk/ # 真实→虚构映射 / 分区民俗 / 节气 / 茶酒饮食 (4)
 │   ├── jianghu/        # 门派 / 会党 / 礼节 / 现代地下经济 (4)
@@ -196,7 +196,8 @@ knowledge-base/
     ├── vehicles.md
     ├── luxury-fashion.md
     ├── art-antiques.md
-    └── technology-hacking.md
+    ├── technology-hacking.md
+    └── xianxia-xuanhuan-cultivation.md
 ```
 
 **硬约束**：

@@ -65,12 +65,13 @@ kb_dependencies:
   - common/knowledge-base/china/jianghu/etiquette-and-rules.md
   - common/knowledge-base/china/jianghu/underground-economy.md
   - common/knowledge-base/china/philosophy/mythology-and-folk-belief.md  # 紫微斗数 / 风水命理
+  - common/knowledge-base/china/philosophy/shanhaijing.md                # 山海经意象（命名候选来源）
   - common/knowledge-base/china/philosophy/daoism.md                     # 道家十二段锦
   - common/knowledge-base/china/history/late-qing.md                     # 淮军 / 湘军 / 洋务 / 漕运
   - common/knowledge-base/china/history/republican-china.md              # 北洋军统 / 军阀
   - common/knowledge-base/china/law-enforcement/anti-mafia.md
   - common/knowledge-base/china/law-enforcement/police-daily.md
-  - common/knowledge-base/crafts/martial-arts.md                         # 徒手战力硬上限
+  - common/knowledge-base/crafts/martial-arts.md                         # 徒手战力硬上限（不可突破）
   - common/knowledge-base/crafts/weapons.md                              # 武器合规红线
   - common/knowledge-base/crafts/medicine-pharmacology.md                # 伤势恢复周期
   - common/knowledge-base/crafts/military-special-forces.md              # 神龙基地 / 退伍线
@@ -78,6 +79,7 @@ kb_dependencies:
   - common/knowledge-base/crafts/entertainment-industry.md               # 季繁星（洛神）娱乐圈线
   - common/knowledge-base/crafts/vehicles.md
   - common/knowledge-base/crafts/luxury-fashion.md
+  - common/knowledge-base/crafts/xianxia-xuanhuan-cultivation.md         # 功法 / 境界 / 门派骨架（候选参考）
 # 本书使用的题材 profile（选一到两个）：
 genre_profile: common/constraints/genre-profiles/urban-male.md
 # 核心待重构稿版本（raw/manuscript/）：
