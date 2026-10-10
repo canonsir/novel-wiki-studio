@@ -77,7 +77,7 @@
 - [[terms/北辰|北辰]] — 命盘主位 — proposed
 - [[terms/十重天宫|十重天宫]] — 武学 / 境界 — proposed
 - [[terms/吃讲茶|吃讲茶]] — 江湖仪式 — proposed
-- [[terms/嗖匹配|嗖匹配]] — 匿名社交平台（虚构） — proposed
+- [[terms/灵魂App|灵魂 App]] — 匿名社交平台（本书世界观内的虚构品牌） — proposed
 - [[terms/排名堂 ／ 挑战赛积分|排名堂 / 挑战赛积分]] — 神龙基地规则 — proposed
 - [[terms/杀破狼|杀破狼]] — 命盘格局 — proposed
 - [[terms/洛神赋|洛神赋]] — 文化符号 — proposed

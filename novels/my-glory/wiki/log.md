@@ -79,3 +79,22 @@
   - wiki/index.md 加挂新桥页
 - Contradictions: 无
 - Decisions needed: 候选集中具体采信哪些外号 / 堂口名 / 功法名需用户 ACK 或 editor-agent 评审后入人物页 / 术语页
+
+## [2026-10-10] decision | 嗖匹配 → 灵魂 App
+
+- Sources:
+  - 用户决议：嗖匹配是 Soul 音译拼音，怕平台识别；统一改为"灵魂 App"（直译）
+  - 合规约束：common/constraints/national-redlines-checklist.md L48 / platform-redfruit-checklist.md L49 / platform-fanqie-checklist.md L17 / common/knowledge-base/crafts/entertainment-industry.md L16
+- Added:
+  - wiki/terms/灵魂App.md（id: term-soul-app, slug: 灵魂App）
+- Updated:
+  - wiki/characters/温书宁.md S1 Hook 段
+  - wiki/overview.md 主线因果摘要
+  - wiki/index.md terms 节
+  - wiki/continuity/continuity-naming-map.md 对账记录
+  - reports/REP-20261010-003-naming-review.md 追加「用户决议」与「迁移记录」小节
+  - reports/REP-20261010-002-second-pass.md 术语清单
+- Deleted:
+  - wiki/terms/嗖匹配.md（过渡用名废弃）
+- Contradictions: 无
+- Decisions needed: 本条决议已完成；REP-003 §3 的另外 4 项（青帮 / 天下会 / 天一集团 / 神龙基地）仍挂起，S2 前必须决议青帮
