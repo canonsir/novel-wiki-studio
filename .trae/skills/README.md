@@ -9,6 +9,7 @@ Novel Wiki Studio 公共技能库。按**职责**分组，不按作者或来源�
 | `writing/` | 创作：策划、撰写、润色 | author-agent |
 | `review/` | 审查：方案质询、平台审核、读者代入 | editor-agent / reviewer-agent / reader-agent / continuity-agent |
 | `short-drama/` | 小说转短剧改编：分镜、单集 review、AI 资产 | adapter-agent |
+| `knowledge/` | 知识库维护：新增知识条目、同步索引 | 资料管理员 |
 
 ## 使用总规则
 

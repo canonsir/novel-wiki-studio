@@ -164,6 +164,7 @@
 | `writing/` | 创作 | author-agent |
 | `review/` | 审查 / 质询 | editor / continuity / reviewer / reader / grill |
 | `short-drama/` | 短剧改编 | adapter-agent |
+| `knowledge/` | 知识库条目维护 | 资料管理员 |
 
 Skill 不自己揽活，由 Agent 调用。详见 `.trae/skills/README.md`。
 
