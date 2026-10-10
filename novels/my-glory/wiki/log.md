@@ -30,7 +30,7 @@
   - DEC-20261010-003 S1-S6 分卷骨架
   - 来源权利状态最终确认
 
-## [2026-10-10] ingest / expand | 原稿封板 + 名词 Wiki 批量落地（第二批）
+## [2026-10-10] ingest | 原稿封板 + 名词 Wiki 批量落地（第二批）
 
 - Sources:
   - 新增 SRC-20261010-002：raw/manuscript/我的荣耀_原稿封板版.md（747 章 / md5 0ddae7c5c2b1aabd055e65408575a732）
@@ -54,3 +54,13 @@
 - Decisions needed:
   - 继续等 DEC-001 / DEC-002 / DEC-003 的用户 ACK
   - 原稿封板版（SRC-002）作为后续改编唯一事实源，等用户 ACK
+
+## [2026-10-10] setup | 名词页中文文件名 + slug 索引字段
+
+- Added:
+  - scripts/lint_wiki.py 支持 slug 字段：若 frontmatter 含 slug 则 filename == slug，否则 filename == id
+- Updated:
+  - wiki/characters / factions / locations / terms / objects 共 71 页：文件名改为中文 title（如 顾北辰.md）；frontmatter 新增 slug 字段 == 文件名 stem；id 字段保留 kebab-case 作稳定索引（图谱 / AI 用）
+  - 全 wiki 与 decisions 中的 wikilink 与路径引用同步到中文
+  - wiki/index.md 重建到中文文件名
+- Rationale: 中文文件名提升人工 review 效率；kebab-id 继续用作图谱和脚本的稳定键

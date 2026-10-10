@@ -28,9 +28,10 @@
 
 ## 4. 页面与链接
 
-- 页面采用小写 kebab-case 文件名；中文标题写在 frontmatter `title`。
+- 页面文件名默认与 `id` 保持一致（kebab-case）；若 frontmatter 含 `slug` 字段，则**文件名改为 `slug` 的值**，`slug` 允许中文或空格——用于提升人工 review 效率。
+- `id` 字段永远保留 kebab-case（图谱 / AI 索引稳定键）；中文标题写在 frontmatter `title`。
 - 人物 ID：`char-xxx`；地点：`loc-xxx`；事件：`evt-xxx`；场景：`scn-v01-c001-001`；伏笔：`clue-xxx`。
-- 正文引用实体时尽量使用 Obsidian 双链：`[[characters/char-name|角色名]]`。
+- 正文引用实体时尽量使用 Obsidian 双链：`[[characters/<slug 或 id>|角色名]]`。
 - 不复制权威事实。人物生日以人物页为准；事件日期以事件页和主时间线为准。
 - 每个页面至少被 `wiki/index.md` 收录；重要页面至少有一个入链。
 

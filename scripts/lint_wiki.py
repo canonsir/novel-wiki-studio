@@ -14,6 +14,7 @@ REQUIRED_FIELDS = {"id", "type", "title", "status", "canon", "source_refs", "upd
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
 LOG_RE = re.compile(r"^## \[\d{4}-\d{2}-\d{2}\] (ingest|query|expand|lint|decision|setup) \| .+")
 ID_RE = re.compile(r"^id:\s*[\"']?([^\"'\n]+)", re.MULTILINE)
+SLUG_RE = re.compile(r"^slug:\s*[\"']?([^\"'\n]+)", re.MULTILINE)
 KEY_RE = re.compile(r"^([a-zA-Z_][a-zA-Z0-9_-]*):", re.MULTILINE)
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
@@ -84,12 +85,15 @@ def main() -> int:
                     ids[entity_id].append(page)
                     if not KEBAB_RE.fullmatch(entity_id):
                         issues.append(Issue("ERROR", page, f"id is not kebab-case: {entity_id}"))
-                    if page.stem != entity_id:
+                    slug_match = SLUG_RE.search(fm)
+                    expected_stem = slug_match.group(1).strip() if slug_match else entity_id
+                    if page.stem != expected_stem:
+                        label = "slug" if slug_match else "id"
                         issues.append(
                             Issue(
                                 "ERROR",
                                 page,
-                                f"filename must match id: expected {entity_id}.md",
+                                f"filename must match {label}: expected {expected_stem}.md",
                             )
                         )
 

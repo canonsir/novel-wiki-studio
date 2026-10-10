@@ -21,10 +21,10 @@
   - 封板稿与改编版的命名对应关系仅在 `wiki/continuity/continuity-naming-map.md` 内部对账用，正文、人物页与 overview 全部按"全新小说"叙述。
 - **Files to update**（本决策采纳后）:
   - novels/my-glory/novel.yaml（boundaries.must_keep 已登记）
-  - novels/my-glory/wiki/characters/char-gu-beichen.md（新建）
-  - novels/my-glory/wiki/characters/char-gu-chongyue.md（新建，父亲）
-  - novels/my-glory/wiki/characters/char-pei-yungui.md（新建，母亲）
-  - novels/my-glory/wiki/factions/fac-gu-family.md 等五大家族页
+  - novels/my-glory/wiki/characters/顾北辰.md（新建）
+  - novels/my-glory/wiki/characters/顾崇岳.md（新建，父亲）
+  - novels/my-glory/wiki/characters/裴云归.md（新建，母亲）
+  - novels/my-glory/wiki/factions/顾家.md 等五大家族页
   - novels/my-glory/wiki/world/structure-naming-map.md（原名→新名总映射）
 - **References**:
   - raw/references/REF-20261010-001-feishu-adaptation-guli-beichen.md §5.1 §5.2 §5.5

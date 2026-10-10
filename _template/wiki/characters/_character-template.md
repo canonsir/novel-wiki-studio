@@ -1,5 +1,6 @@
 ---
 id: char-example
+slug: 人物名
 type: character
 title: 人物名
 status: active
