@@ -7,8 +7,8 @@ genre: [都市, 逆袭, 爽文, 后宫, 热血]
 target_audience: "男频都市 18-35"
 target_platforms: [番茄小说, 红果短剧]
 content_rating: "待确认（番茄发布版 / 红果漫剧版 / 红果无尺度素材版 三层）"
-planned_length_words: 2500000  # 原稿 747 章，约 250 万字，重构版预计同量级
-planned_volumes: 6             # 蓉城三部曲 + 帝都门阀 + 神龙线 + 终局（S1-S6），待压测
+planned_length_words: 3000000  # 原稿 747 章/250 万字；DEC-006 授权重构扩至 300-350 万字
+planned_volumes: 6             # 蓉城三部曲 + 帝都门阀 + 神龙线 + 终局（S1-S6）；章节区间非硬约束（DEC-006）
 creative_goal:
   outcome: original_novel
   approach: "原创重构"
@@ -48,8 +48,16 @@ boundaries:
     - 未成年人涉性 / 涉犯罪情节
   ending_constraints:
     - 顾北辰在五家议会中达成"众星拱北辰"
-    - 杀破狼三星（破军=军师 / 贪狼 / 七杀）命盘闭环
+    - 杀破狼三星（破军=军师 / 贪狼 / 七杀）命盘闭环（S4 末完成）
     - 不写悲剧收尾；核心兄弟不全员死亡
+    - 所有 S1-S4 伏笔必须在 S5-S6 收束（DEC-006）
+    - 核心主题"荣耀"必须在终章给出明确答题（DEC-006）
+    - 核心 6 位女主各有明确归宿点，不工具化（DEC-006）
+  ending_reconstruction:
+    status: user_ack_pending
+    source: decisions/DEC-20261010-006-ending-reconstruction-authorized.md
+    brief: wiki/plot/S5-S6结尾重构·方向简报.md
+    options: [方向A·传统爽文, 方向B·真实文脉, 方向C·双层结局（推荐）]
 shared_universe: null
 source_of_truth:
   raw_immutable: true

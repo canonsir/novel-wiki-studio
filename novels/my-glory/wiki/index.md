@@ -111,6 +111,7 @@
 - [[plot/structure-plot|《我的荣耀》分卷骨架]] — S1-S6 卷级骨架 — proposed
 - [[plot/短剧Arc分段骨架|短剧 Arc 分段骨架]] — S1-S6 拆为 16 Arc / 文件夹映射 — proposed
 - [[plot/arcs/Arc1-女神与仙人跳-图谱|Arc 1 女神与仙人跳 剧情图谱]] — c001-c030 / mermaid — proposed
+- [[plot/S5-S6结尾重构·方向简报|S5-S6 结尾重构·方向简报]] — DEC-006 三方向 pitch — user ACK pending
 
 ## Relationships
 
@@ -141,5 +142,7 @@
 - 待 ACK：DEC-20261010-003 S1-S6 分卷骨架
 - 已 ACK：DEC-20261010-004 青帮 → 青龙帮
 - 已 ACK：DEC-20261010-005 创作定调：逆袭 + 升级 + 爽文 + 后宫（画面感代偿）
+- 已 ACK：DEC-20261010-006 原著烂尾授权：结尾完全重构 + 篇幅扩展至 300-350 万字
+- 待 ACK：DEC-006 结尾三方向（A 爽文 / B 文脉 / **C 双层-推荐**）
 - 待 ACK：原稿封板版（SRC-002）作为改编唯一事实源
 - 待 ACK：原稿权利状态

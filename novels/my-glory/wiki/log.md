@@ -231,3 +231,25 @@
 - Decisions needed:
   - Arc 1 c002-c030 细纲（editor-agent 按 arc 内 30 章做 scene-level 展开）
   - Arc 1 → Arc 2 过渡逻辑：500 万代偿协议 + 顾崇岳帝都电话 的双钩子如何在 Arc 2 c031 启动
+
+## [2026-10-10] decision | 原著烂尾授权：结尾完全重构 + 篇幅扩展（DEC-006）
+
+- Sources:
+  - 用户决议："原著的小说结尾是烂尾草草收尾的，所以我们这次改编重构小说完全可以丰富、扩展、合理的闭环小说故事"
+  - raw/manuscript/我的荣耀_原稿封板版.md 第 700-747 章（原稿烂尾位）
+- Added:
+  - decisions/DEC-20261010-006-ending-reconstruction-authorized.md（accepted；三方向待 ACK）
+  - wiki/plot/S5-S6结尾重构·方向简报.md：三方向 pitch（A 传统爽文 / B 真实文脉 / C 双层结局推荐）
+- Updated:
+  - novel.yaml:
+    * planned_length_words: 2500000 → 3000000
+    * planned_volumes 注释：章节区间非硬约束
+    * boundaries.ending_constraints 新增：伏笔必闭 / 主题必答题 / 后宫明确归宿
+    * boundaries.ending_reconstruction：三方向 + ACK pending
+  - wiki/overview.md：Open Questions 增加 DEC-004/005/006 ACK 状态；新增"结尾重构授权"段
+  - wiki/index.md：挂新页 + Open Questions 更新
+- Contradictions: 无
+- Decisions needed:
+  - 用户选择结尾方向（A/B/C/自定义）
+  - 用户 ACK 篇幅上限（300 万 vs 350 万）
+  - 用户 ACK 后宫归属原则
