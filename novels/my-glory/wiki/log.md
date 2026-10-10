@@ -349,3 +349,32 @@
 - Decisions needed:
   - 用户 ACK 本总览图谱 → 开 c002
   - 可延后 ACK：贪狼/七杀人物 / 跨境雇佣兵名 / 国家监察机构名
+
+## [2026-10-10] decision | 命盘三星 + 穷奇旅 + 玄鉴台 命名固化（DEC-009）+ 小说改名候选报告
+
+- Sources:
+  - 用户决议："不要延后，直接前期定好，后续可以补充修改"
+  - 用户决议："小说名字帮我推荐重新起一个"
+  - DEC-20261010-007 结尾方向 + 全书大纲总览第七节原延后项
+- Added:
+  - decisions/DEC-20261010-009-sanxing-mercenary-watch-naming.md（accepted）
+    * 杀破狼三星定稿：破军=贺九思 / 贪狼=洪四海 / 七杀=程星野
+    * 跨境雇佣兵：穷奇旅（山海经四凶之"穷奇"，善辨逆顺吃忠厚人）
+    * 国家监察机构：玄鉴台（玄+鉴+台；暗合项玄冥"玄"字伏笔）
+  - wiki/factions/穷奇旅.md：组织结构 + 剧情功能 + 短剧改编锚点
+  - wiki/factions/玄鉴台.md：三司架构 + 项玄冥伏笔链 + Arc 17 进场
+  - reports/REP-20261010-006-novel-rename-pitch.md：小说改名候选报告
+    * 原名《我的荣耀》诊断（5 维度）
+    * 15 个候选书名（命理/逆袭/组织/爽文四条路线）
+    * 作者 TOP 3 强推（众星拱北辰 / 北辰令 / 老师北辰来接光了）
+    * 推荐方案 B 双名双发（小说+短剧各一名）
+- Updated:
+  - wiki/terms/杀破狼.md：三星定稿表 + 入场章 + 聚齐节奏
+  - wiki/plot/全书大纲总览.md：命盘图"★待定"→ 实名；第七节 ACK 清单升级
+  - wiki/plot/短剧Arc分段骨架.md：Arc 14 核心对手"穷奇旅九尾"；Arc 17 新引入"玄鉴台代表+项玄冥呼应"
+  - wiki/index.md：
+    * Factions 段 新增 玄鉴台 / 穷奇旅
+    * Open Questions 新增 DEC-009 已 ACK + REP-006 待 ACK
+- Contradictions: 无
+- Decisions needed:
+  - 用户选小说新名（方案 A/B/C/D）
