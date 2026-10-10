@@ -1,0 +1,97 @@
+schema_version: 1
+id: my-glory
+title: "我的荣耀"
+status: setup
+language: zh-CN
+genre: [都市, 逆袭, 爽文, 后宫, 热血]
+target_audience: "男频都市 18-35"
+target_platforms: [番茄小说, 红果短剧]
+content_rating: "待确认（番茄发布版 / 红果漫剧版 / 红果无尺度素材版 三层）"
+planned_length_words: 2500000  # 原稿 747 章，约 250 万字，重构版预计同量级
+planned_volumes: 6             # 蓉城三部曲 + 帝都门阀 + 神龙线 + 终局（S1-S6），待压测
+creative_goal:
+  outcome: original_novel
+  approach: "原创重构"
+  source_rights: "用户自有或已获合法授权（待最终确认）"
+narrative:
+  pov: "第一人称男主（顾北辰 POV），后期可穿插女主/反派 POV"
+  tense: "过去时为主"
+  tone: [爽文, 街头感, 兄弟义气, 真实文脉]
+  pacing: "章末钩子驱动；平均 3000-5000 字/章"
+core:
+  logline: "蓉城三流大专的网吧少年顾北辰（北哥）在一次匿名约见中卷入门阀继承人的仙人跳，被迫以街头狠劲反杀，一路从夜场打到帝都五家议会，最终在'众星拱北辰'的格局中完成命盘杀破狼聚齐的身世闭环。"
+  dramatic_question: "一个被豪门逐出的支系少年，能否在不丢掉底层血性的前提下走到北辰之位？"
+  theme_question: "荣耀是外界授予的位置，还是自己配得起的名字？"
+  reader_promise: "每章可见的身份错位 / 地位逆转 / 公开打脸 / 资源升级 / 后台揭示；章末钩子+场景升级"
+boundaries:
+  must_keep:
+    - 原稿全部主线事件、人物关系、爽感节点、后宫张力
+    - "北辰 + 杀破狼"命理主轴
+    - 真实文脉背景（淮军/湘军/漕运/内务府皇商/北洋军统 五大家族）
+    - 组织原名（天下会 / 鬼组 / 海迪 / 狼舞 / 白袍会 / 忠信帮 / 飞鸿帮 / 天一集团 / 神龙基地 / 青帮）
+    - 真实武学术语（道家十二段锦 / 杀破狼 / 十重天宫 / 一级药剂）
+    - 大结局保留"我的荣耀"的身份闭环
+  must_avoid:
+    - 任何真实在世人物的影射或丑化
+    - 可直接复刻的制毒 / 制爆 / 武器改装 / 骗保等违法操作细节
+    - 对真实地名的直接使用（成都→蓉城，北京→帝都；见 real-to-fictional-map.md）
+    - 原稿的女性物化、种族 / 地域歧视表达
+    - 未成年人涉性 / 涉犯罪情节
+  ending_constraints:
+    - 顾北辰在五家议会中达成"众星拱北辰"
+    - 杀破狼三星（破军=军师 / 贪狼 / 七杀）命盘闭环
+    - 不写悲剧收尾；核心兄弟不全员死亡
+shared_universe: null
+source_of_truth:
+  raw_immutable: true
+  wiki_owner: llm
+  human_approval_required:
+    - core_theme
+    - protagonist_fate
+    - ending
+    - publication_risk
+    - naming_system          # 顾北辰方案（本次新增，由 DEC-20261010-001 承载）
+    - family_lineage         # 五大家族文脉（本次新增）
+graph:
+  required: true
+  engine: flowgram
+  output: graph/story-graph.json
+# 该书需要引用的真实世界知识库条目；首次创作前必须审读。
+kb_dependencies:
+  - common/knowledge-base/china/geography-folk/real-to-fictional-map.md
+  - common/knowledge-base/china/geography-folk/regional-overview.md
+  - common/knowledge-base/china/jianghu/secret-societies.md       # 洪门 / 青帮 / 哥老会（天下会/青帮/白袍会 渊源）
+  - common/knowledge-base/china/jianghu/martial-schools.md
+  - common/knowledge-base/china/jianghu/etiquette-and-rules.md
+  - common/knowledge-base/china/jianghu/underground-economy.md
+  - common/knowledge-base/china/philosophy/mythology-and-folk-belief.md  # 紫微斗数 / 风水命理
+  - common/knowledge-base/china/philosophy/daoism.md                     # 道家十二段锦
+  - common/knowledge-base/china/history/late-qing.md                     # 淮军 / 湘军 / 洋务 / 漕运
+  - common/knowledge-base/china/history/republican-china.md              # 北洋军统 / 军阀
+  - common/knowledge-base/china/law-enforcement/anti-mafia.md
+  - common/knowledge-base/china/law-enforcement/police-daily.md
+  - common/knowledge-base/crafts/martial-arts.md                         # 徒手战力硬上限
+  - common/knowledge-base/crafts/weapons.md                              # 武器合规红线
+  - common/knowledge-base/crafts/medicine-pharmacology.md                # 伤势恢复周期
+  - common/knowledge-base/crafts/military-special-forces.md              # 神龙基地 / 退伍线
+  - common/knowledge-base/crafts/finance-business.md                     # 顾家 / 裴家 / 天一集团 商业线
+  - common/knowledge-base/crafts/entertainment-industry.md               # 季繁星（洛神）娱乐圈线
+  - common/knowledge-base/crafts/vehicles.md
+  - common/knowledge-base/crafts/luxury-fashion.md
+# 本书使用的题材 profile（选一到两个）：
+genre_profile: common/constraints/genre-profiles/urban-male.md
+# 核心待重构稿版本（raw/manuscript/）：
+raw_manuscript:
+  files:
+    - raw/manuscript/我的荣耀_全文原稿.md
+    - raw/manuscript/我的荣耀_全文原稿.txt
+  chapter_count: 747
+  md5_md: 6ae0ab68dfe53c580958091d4e9f8da8
+  md5_txt: 53c6f91cbb3e5c05960f8fb0e86d121d
+# 外部参考材料：
+references:
+  - path: raw/references/REF-20261010-001-feishu-adaptation-guli-beichen.md
+    source: "飞书文档 Wc6gdR6QKoIf1uxBJu0cEbGfnAc revision 13 快照"
+    status: proposed
+created: 2026-10-10
+updated: 2026-10-10

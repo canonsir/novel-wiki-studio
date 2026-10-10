@@ -5,19 +5,28 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
 from build_story_graph import build, chapter_source, parse_chapters
 
-EXPECTED_ARCS = {
-    "s1-boundary-beyond",
-    "s2-set-rules",
-    "s3-chairman",
-    "s4-mirror",
-    "s5-pawn",
-    "s6-homecoming",
-}
+
+def load_expected_arcs(novel: Path) -> set[str]:
+    """Read expected arc slugs from wiki/plot/structure-plot.md if present.
+
+    Looks for slugs that appear in a Markdown table cell between pipes, so
+    narrative phrases like "S1-S6" won't be miscounted.
+    """
+    plot = novel / "wiki" / "plot" / "structure-plot.md"
+    if not plot.is_file():
+        return set()
+    slug_re = re.compile(r"\|\s*(s[1-9]-[a-z][a-z0-9-]+)\s*\|")
+    arcs = set()
+    for line in plot.read_text(encoding="utf-8").splitlines():
+        for match in slug_re.finditer(line):
+            arcs.add(match.group(1))
+    return arcs
 
 
 def main() -> int:
@@ -55,10 +64,11 @@ def main() -> int:
     coverage = saved.get("coverage", {})
     if chapter_source(novel) != novel / "drafts" / "manuscript" / "latest.md":
         issues.append("latest manuscript must be drafts/manuscript/latest.md")
-    if actual_arcs != EXPECTED_ARCS:
+    expected_arcs = load_expected_arcs(novel)
+    if expected_arcs and actual_arcs != expected_arcs:
         issues.append(
-            f"chapter arcs mismatch: missing={sorted(EXPECTED_ARCS - actual_arcs)}, "
-            f"extra={sorted(actual_arcs - EXPECTED_ARCS)}"
+            f"chapter arcs mismatch: missing={sorted(expected_arcs - actual_arcs)}, "
+            f"extra={sorted(actual_arcs - expected_arcs)}"
         )
     if coverage.get("wikiPages") != len(wiki_pages):
         issues.append(f"wiki coverage {coverage.get('wikiPages')} != {len(wiki_pages)}")
