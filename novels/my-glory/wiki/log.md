@@ -29,3 +29,28 @@
   - DEC-20261010-002 组织名保留原名 + 补真实渊源
   - DEC-20261010-003 S1-S6 分卷骨架
   - 来源权利状态最终确认
+
+## [2026-10-10] ingest / expand | 原稿封板 + 名词 Wiki 批量落地（第二批）
+
+- Sources:
+  - 新增 SRC-20261010-002：raw/manuscript/我的荣耀_原稿封板版.md（747 章 / md5 0ddae7c5c2b1aabd055e65408575a732）
+- Added:
+  - raw/manuscript/我的荣耀_原稿封板版.md（新封板版）
+  - wiki/characters/*.md 新增 20 个（共 23 个核心人物页，每页含年龄/身高/外貌/职业/背景/性格/能力/弧线/短剧改编锚点）
+  - wiki/factions/*.md 新增 17 个（天下会 / 鬼组 / 海迪 / 狼舞 / 白袍会 / 忠信帮 / 飞鸿帮 / 天一集团 / 神龙基地 / 青帮 / 青花会 / 顾霍裴秦韩 五家 / 五家议会）
+  - wiki/locations/*.md 新增 10 个（蓉城全域 + 五区 + 青城山 + 神龙基地 + 京畿旧城胡同 + 听澜轩）
+  - wiki/terms/*.md 新增 10 个（紫微斗数 / 杀破狼 / 北辰 / 道家十二段锦 / 十重天宫 / 一级药剂 / 洛神赋 / 嗖匹配 / 吃讲茶 / 挑战赛积分）
+  - wiki/objects/*.md 新增 11 个（乌银手链 / 十二段锦注手抄本 / 黄铜算盘 / 红酒瓶残片 / 五家令牌 / 龙鳞袖章 / 鬼组耳钉）
+- Updated:
+  - wiki/sources/source-inventory.md（SRC-002 封板版登记，含清洗清单与 md5）
+  - novel.yaml（raw_manuscript 升级为 initial_import + sealed 双指纹）
+  - wiki/overview.md（彻底移除"原××"对照）
+  - wiki/characters/char-gu-beichen / char-wen-shuning / char-li-qingcang / char-cheng-xingye（4 个核心人物页去对照化 + 详化）
+  - wiki/world/structure-naming-map.md → wiki/continuity/continuity-naming-map.md（映射表降级为内部对账用，正文禁用）
+  - wiki/index.md（按新结构全面重建；83 内容页上架）
+  - decisions/DEC-20261010-001（Consequences 去对照化）
+- Contradictions resolved:
+  - "原××"对照全面退出 Wiki 正文、人物页与 overview（仅保留 continuity-naming-map 内部对账 + log 审计 + source-refs 文件名）
+- Decisions needed:
+  - 继续等 DEC-001 / DEC-002 / DEC-003 的用户 ACK
+  - 原稿封板版（SRC-002）作为后续改编唯一事实源，等用户 ACK

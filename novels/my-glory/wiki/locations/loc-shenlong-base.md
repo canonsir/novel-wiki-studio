@@ -1,0 +1,22 @@
+---
+id: loc-shenlong-base
+type: location
+title: 神龙基地
+status: active
+canon: proposed
+source_refs:
+  - raw/manuscript/我的荣耀_原稿封板版.md
+  - common/knowledge-base/china/geography-folk/real-to-fictional-map.md
+updated: 2026-10-10
+tags: [location]
+---
+
+# 神龙基地
+
+- **真实原型**：西北戈壁某军事封闭区（具体坐标虚构）
+- **故事定位**：S4 全卷主舞台
+- **关键细节**：戈壁 + 封闭营房 + 十二段锦训练场 + 挑战赛竞技馆
+
+## 短剧 / 视频改编备注
+
+戈壁风沙 + 黑灰迷彩 + 龙鳞袖章 + 十二段锦训练场

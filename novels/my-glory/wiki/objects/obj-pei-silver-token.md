@@ -1,0 +1,16 @@
+---
+id: obj-pei-silver-token
+type: object
+title: 裴家乌银令
+status: active
+canon: proposed
+source_refs:
+  - raw/references/REF-20261010-001-feishu-adaptation-guli-beichen.md
+updated: 2026-10-10
+tags: [object]
+---
+
+# 裴家乌银令
+
+- **用途 / 定位**：裴家内族成员信物
+- **细节**：乌银铸造；见 fac-pei-family；S5 议会时各族令牌同场。

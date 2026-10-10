@@ -82,12 +82,18 @@ kb_dependencies:
 genre_profile: common/constraints/genre-profiles/urban-male.md
 # 核心待重构稿版本（raw/manuscript/）：
 raw_manuscript:
-  files:
-    - raw/manuscript/我的荣耀_全文原稿.md
-    - raw/manuscript/我的荣耀_全文原稿.txt
-  chapter_count: 747
-  md5_md: 6ae0ab68dfe53c580958091d4e9f8da8
-  md5_txt: 53c6f91cbb3e5c05960f8fb0e86d121d
+  initial_import:
+    file: raw/manuscript/我的荣耀_全文原稿.md
+    md5: 6ae0ab68dfe53c580958091d4e9f8da8
+    chapter_count: 747
+    role: 原始指纹锚点（审计用，不用于改编）
+  sealed:
+    file: raw/manuscript/我的荣耀_原稿封板版.md
+    md5: 0ddae7c5c2b1aabd055e65408575a732
+    chapter_count: 747
+    size_chars: 2009562
+    sealed_on: 2026-10-10
+    role: 改编工作唯一事实源（封板后只读）
 # 外部参考材料：
 references:
   - path: raw/references/REF-20261010-001-feishu-adaptation-guli-beichen.md

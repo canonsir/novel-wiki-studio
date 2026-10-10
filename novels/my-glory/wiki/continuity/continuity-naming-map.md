@@ -1,19 +1,21 @@
 ---
-id: structure-naming-map
-type: naming-map
-title: 原名→新名总映射表
+id: continuity-naming-map
+type: continuity-naming-map
+title: 封板稿→改编版 命名映射（内部对账）
 status: active
 canon: proposed
 source_refs:
   - raw/references/REF-20261010-001-feishu-adaptation-guli-beichen.md
-  - raw/manuscript/我的荣耀_全文原稿.md
+  - raw/manuscript/我的荣耀_原稿封板版.md
 updated: 2026-10-10
-tags: [naming, lint-required]
+tags: [continuity, lint-required, internal-only]
 ---
 
-# 原名 → 新名 总映射表
+# 封板稿 → 改编版 命名映射（**仅供 continuity 对账使用**）
 
-> 本页为改编硬约束，lint 时据此检查正文和 Wiki 一致性。所有 `proposed` 条目在 DEC-20261010-001 / 002 被用户 ACK 后统一升 `confirmed`。
+> **写作与 Wiki 禁用**：改编版正文、人物页、Overview 一律**不**以"原××"方式称呼。本页仅供 continuity-agent / lint 自动化检查原稿与改编版的一致性。
+>
+> 本页在 S1 全卷落稿、名字体系稳定后将移入 `.archive/`。
 
 ## 主角及亲族
 
