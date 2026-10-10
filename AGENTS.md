@@ -187,6 +187,9 @@ knowledge-base/
     ├── martial-arts.md
     ├── weapons.md
     ├── medicine-pharmacology.md
+    ├── medical-industry.md
+    ├── military-special-forces.md
+    ├── entertainment-industry.md
     ├── finance-business.md
     ├── vehicles.md
     ├── luxury-fashion.md

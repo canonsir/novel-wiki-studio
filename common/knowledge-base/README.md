@@ -93,6 +93,9 @@ knowledge-base/
     ├── martial-arts.md
     ├── weapons.md
     ├── medicine-pharmacology.md
+    ├── medical-industry.md
+    ├── military-special-forces.md
+    ├── entertainment-industry.md
     ├── finance-business.md
     ├── vehicles.md
     ├── luxury-fashion.md
@@ -111,6 +114,6 @@ knowledge-base/
 | `china/jianghu/*` | active | 门派 / 会党 / 礼节 / 地下经济 共 4 篇 |
 | `china/law-enforcement/*` | active | 扫黑 / 公安日常 共 2 篇 |
 | `world/*` | active | 宗教 / 世界史 / 跨文化原型 共 3 篇 |
-| `crafts/*` | active | 武学 / 枪械 / 医药 / 金融 / 车辆 / 奢侈品 / 古玩 / 科技 共 8 篇 |
+| `crafts/*` | active | 武学 / 枪械 / 医药 / 医疗行业 / 军事 / 影视娱乐 / 金融 / 车辆 / 奢侈品 / 古玩 / 科技 共 11 篇 |
 
 **约定**：stub 条目的 `TODO:` 区标注"用到再补"是允许的，但首次需要用到时**必须**先写满再写入小说。
