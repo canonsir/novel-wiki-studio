@@ -13,19 +13,24 @@ from build_story_graph import build, chapter_source, parse_chapters
 
 
 def load_expected_arcs(novel: Path) -> set[str]:
-    """Read expected arc slugs from wiki/plot/structure-plot.md if present.
+    """Read expected arc slugs from the arc split structure page (preferred)
+    or fall back to the volume-level structure-plot.md.
 
     Looks for slugs that appear in a Markdown table cell between pipes, so
     narrative phrases like "S1-S6" won't be miscounted.
     """
-    plot = novel / "wiki" / "plot" / "structure-plot.md"
-    if not plot.is_file():
-        return set()
-    slug_re = re.compile(r"\|\s*(s[1-9]-[a-z][a-z0-9-]+)\s*\|")
-    arcs = set()
-    for line in plot.read_text(encoding="utf-8").splitlines():
-        for match in slug_re.finditer(line):
-            arcs.add(match.group(1))
+    candidates = [
+        novel / "wiki" / "plot" / "短剧Arc分段骨架.md",
+        novel / "wiki" / "plot" / "structure-plot.md",
+    ]
+    slug_re = re.compile(r"\|\s*(s[1-9][a-z]?-[a-z][a-z0-9-]+)\s*\|")
+    arcs: set[str] = set()
+    for plot in candidates:
+        if not plot.is_file():
+            continue
+        for line in plot.read_text(encoding="utf-8").splitlines():
+            for match in slug_re.finditer(line):
+                arcs.add(match.group(1))
     return arcs
 
 

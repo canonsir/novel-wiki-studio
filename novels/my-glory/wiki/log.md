@@ -179,7 +179,7 @@
   - [x] 章末钩子：九头兽戒指（下章揭厉擎苍）
   - [x] 新名 lint：正文零命中禁词（对账说明段除外）
 
-## [2026-10-10] revise | c001 叙事机制升级：漂流瓶 → 灵魂 App 瞬间三件套
+## [2026-10-10] expand | c001 叙事机制升级：漂流瓶 → 灵魂 App 瞬间三件套
 
 - Sources:
   - 用户决议："不要用漂流瓶，不是已经规定好有灵魂 app 了吗？漂流瓶太老气了"
@@ -202,3 +202,32 @@
 - Decisions needed:
   - c002 续写：如何揭开"中间坐标被操纵"的技术线（厉家是否已入股灵魂 App 母公司"灵枢科技"？）；此伏笔对 S2-S3 "青龙帮技术线" 的连接
   - 鬼组霍惊鸿后期用灵魂 App 接触主角时，代号从"叉"升级为行星昵称——是否沿用"叉"？（editor-agent 待压测）
+
+## [2026-10-10] expand | S1-S6 拆为 16 Arc + Arc 1 剧情图谱 + 目录重排
+
+- Sources:
+  - 用户决议："按照故事情节分类，分为 n 部，根据文件夹分类，方便后续转 AI 短剧"
+  - DEC-20261010-005 创作定调（短剧改编友好）
+  - raw/manuscript/我的荣耀_原稿封板版.md 第 1-30 章
+- Added:
+  - wiki/plot/短剧Arc分段骨架.md：S1-S6 → 16 Arc 分段表（30 章/arc）+ 文件夹映射 + 短剧改编元数据规范
+  - wiki/plot/arcs/Arc1-女神与仙人跳-图谱.md：Arc 1 剧情图谱（c001-c030）
+    * mermaid 剧情主流程图（27 节点 / 开场 → 结局钩子）
+    * mermaid 关系图（POV 圈 / 女主圈 / 反派圈 / 伏笔 / 道具 / 法律灰度）
+    * 爽点锚点节奏表（30 章 7 次公开打脸 + 画面感代偿映射）
+    * 短剧改编预估（10-12 集 + 拍摄锚点 + 可拍/不可拍清单）
+  - drafts/chapters/s1a-encounter-trap/README.md：Arc 1 目录元数据
+  - 15 个新 Arc 目录（s1a → s6c）
+- Updated:
+  - wiki/plot/structure-plot.md：卷级骨架标注"升级"，目录名权威转交给 arc 骨架页
+  - wiki/index.md：挂上 arc 骨架 + Arc 1 图谱
+  - drafts/chapters/*：旧 s1-city-south 等 6 卷级目录 → 16 arc 级目录
+  - c001-白鹿的瞬间.md：从 s1-city-south 迁入 s1a-encounter-trap
+  - scripts/lint_story_graph.py：load_expected_arcs 支持 arc 级 slug（s1a / s2b 等）+ 优先读 arc 骨架页
+  - graph/story-graph.json 重建（102 nodes / 110 edges / 1 chapter / 0 orphans / closed）
+- Deleted:
+  - 6 个旧卷级目录（s1-city-south / s2-city-east / s3-tianxia-hui / s4-shenlong / s5-didu-menfa / s6-glory-endgame）及其 .gitkeep
+- Contradictions: 无
+- Decisions needed:
+  - Arc 1 c002-c030 细纲（editor-agent 按 arc 内 30 章做 scene-level 展开）
+  - Arc 1 → Arc 2 过渡逻辑：500 万代偿协议 + 顾崇岳帝都电话 的双钩子如何在 Arc 2 c031 启动

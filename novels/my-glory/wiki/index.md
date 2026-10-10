@@ -108,7 +108,9 @@
 
 ## Plot & Timeline
 
-- [[plot/structure-plot|《我的荣耀》分卷骨架]] — proposed
+- [[plot/structure-plot|《我的荣耀》分卷骨架]] — S1-S6 卷级骨架 — proposed
+- [[plot/短剧Arc分段骨架|短剧 Arc 分段骨架]] — S1-S6 拆为 16 Arc / 文件夹映射 — proposed
+- [[plot/arcs/Arc1-女神与仙人跳-图谱|Arc 1 女神与仙人跳 剧情图谱]] — c001-c030 / mermaid — proposed
 
 ## Relationships
 
