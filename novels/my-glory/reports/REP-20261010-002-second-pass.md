@@ -103,7 +103,7 @@ AGENTS.md §2 规定 `raw/` 永久只读，不得改原稿。所以采取"**保�
 **先按角色层级 review**，再按组织、再地点、再术语。建议入口：
 
 1. **主角组**：[顾北辰](file:///../characters/char-gu-beichen.md) → 父亲 顾崇岳 → 母亲 裴云归
-2. **情感线**：[温书宁](file:///../characters/char-wen-shuning.md) → 叶浅浅 → 霍惊鸿 → 裴青鸾 → 季繁星
+2. **情感线**：[温书宁](file:///../characters/char-wen-shuning.md) → 叶浅浅 → 霍凝烟 → 裴青鸾 → 季婉宁
 3. **兄弟团 / 军师**：[程星野](file:///../characters/char-cheng-xingye.md) → 贺九思 → 洪四海 → 宁云疏 → 卜立国 → 贺飞鸿
 4. **反派**：[厉擎苍](file:///../characters/char-li-qingcang.md) → 厉天鸿 → 秦枭 → 韩啸天 → 肥猫
 5. **核心组织**：[五家议会](file:///../factions/fac-five-families-council.md) → 顾/霍/裴/秦/韩 五家 → 天下会 → 鬼组 → 神龙基地 → 青花会

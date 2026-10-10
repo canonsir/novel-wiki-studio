@@ -86,7 +86,7 @@ tags: [report, initialization, review-required]
 S1 蓉城·城南少年 → S2 城东三方 → S3 天下会 → S4 神龙身世 → S5 帝都门阀 → S6 荣耀终局。
 
 ### 人物命名（节选）
-陈照南→顾北辰 / 夏梓妍→温书宁 / 杨雨诗→霍惊鸿 / 李振北→厉擎苍 / 张星→程星野 / 吕润海→洪四海（海哥，保留）/ 洛梦→季繁星。
+陈照南→顾北辰 / 夏梓妍→温书宁 / 杨雨诗→霍凝烟 / 李振北→厉擎苍 / 张星→程星野 / 吕润海→洪四海（海哥，保留）/ 洛梦→季婉宁。
 
 ### 地名
 成都→蓉城 / 北京→帝都，按 `common/knowledge-base/china/geography-folk/real-to-fictional-map.md` 全面虚构化。

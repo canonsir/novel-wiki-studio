@@ -18,21 +18,21 @@
 - [[characters/厉天鸿|厉天鸿]] — 天一集团董事长 / 阶段大 BOSS 之一 — proposed
 - [[characters/厉擎苍|厉擎苍]] — proposed
 - [[characters/叶浅浅|叶浅浅]] — 初恋女主 / 校园线 — proposed
-- [[characters/季繁星|季繁星]] — 娱乐圈线 / 歌坛明星 / 艺名『洛神』 — proposed
+- [[characters/季婉宁|季婉宁]] — 娱乐圈线 / 歌坛明星 / 艺名『洛神』 — proposed
 - [[characters/宁云疏|宁云疏]] — 忠信帮遗孀 / 蓉城·城东精神象征 — proposed
 - [[characters/洪四海|洪四海]] — 引路人 / 蓉城·城东海迪老板 / 忠信帮现任堂主 — proposed
 - [[characters/温书宁|温书宁]] — proposed
 - [[characters/温景同|温景同]] — 温书宁父亲 / S1 叙事麦高芬 500 万赌债 — proposed
 - [[characters/秦枭|秦枭]] — 帝都大反派 / 秦家外脉少主 — proposed
 - [[characters/程星野|程星野]] — proposed
-- [[characters/穆清|穆清]] — 蓉城女警 / 法律与江湖的灰度桥 — proposed
+- [[characters/穆清岚|穆清岚]] — 蓉城女警 / 法律与江湖的灰度桥 — proposed
 - [[characters/肥猫|肥猫]] — 蓉城·城东地头蛇（S2 阶段 BOSS） — proposed
 - [[characters/裴云归|裴云归]] — 主角母亲 / 裴家出走支系（已故） — proposed
 - [[characters/裴无咎|裴无咎]] — 舅舅 / 鬼组组长 / 裴家外脉 — proposed
 - [[characters/裴青鸾|裴青鸾]] — 表姐 / 鬼组『罗刹』 — proposed
 - [[characters/贺九思|贺九思]] — 军师 / 杀破狼『破军』候选 1 — proposed
 - [[characters/贺飞鸿|贺飞鸿]] — 飞鸿帮老大 / 蓉城·城南地头 — proposed
-- [[characters/霍惊鸿|霍惊鸿]] — 核心女主 / 鬼组『叉』代号 — proposed
+- [[characters/霍凝烟|霍凝烟]] — 核心女主 / 鬼组『叉』代号 — proposed
 - [[characters/韩啸天|韩啸天]] — 黑道第一人 / 韩家族长 — proposed
 - [[characters/韩墨渊|韩墨渊]] — 青花会会长 / 韩家外脉中生代 — proposed
 - [[characters/项玄冥|项玄冥]] — 神龙基地背后高人 / 项家外脉 — proposed

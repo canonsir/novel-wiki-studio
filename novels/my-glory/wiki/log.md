@@ -201,7 +201,7 @@
 - Contradictions: 无
 - Decisions needed:
   - c002 续写：如何揭开"中间坐标被操纵"的技术线（厉家是否已入股灵魂 App 母公司"灵枢科技"？）；此伏笔对 S2-S3 "青龙帮技术线" 的连接
-  - 鬼组霍惊鸿后期用灵魂 App 接触主角时，代号从"叉"升级为行星昵称——是否沿用"叉"？（editor-agent 待压测）
+  - 鬼组霍凝烟后期用灵魂 App 接触主角时，代号从"叉"升级为行星昵称——是否沿用"叉"？（editor-agent 待压测）
 
 ## [2026-10-10] expand | S1-S6 拆为 16 Arc + Arc 1 剧情图谱 + 目录重排
 
@@ -286,3 +286,28 @@
   - S6 五 Arc 的 scene-level 细纲（S5 完成后 editor-agent 推进）
   - 跨境雇佣兵组织命名（Arc 14 核心对手；可用虚构国家代号）
   - 国家监察机构命名（Arc 17 新引入角色所属）
+
+## [2026-10-10] decision | 女性角色改名·性别读感修正（DEC-008）
+
+- Sources:
+  - 用户决议："霍惊鸿这个名字我以为是个男的，类似的问题，都需改一下"
+  - 用户 ACK："1、霍凝烟 2、B（整体方案 B 全部改）"
+  - REP-20261010-005 女性角色命名评估报告
+- Added:
+  - decisions/DEC-20261010-008-female-rename.md（accepted）
+  - reports/REP-20261010-005-female-naming-review.md
+- Renamed:
+  - wiki/characters/霍惊鸿.md → wiki/characters/霍凝烟.md（id: char-huo-jinghong → char-huo-ningyan）
+  - wiki/characters/季繁星.md → wiki/characters/季婉宁.md（id: char-ji-fanxing → char-ji-wanning）
+  - wiki/characters/穆清.md → wiki/characters/穆清岚.md（id: char-mu-qing → char-mu-qinglan）
+- Updated:
+  - 27 个文件内全文替换：霍惊鸿→霍凝烟 / 季繁星→季婉宁 / 穆清→穆清岚
+  - 典故保护：单独"惊鸿"（《洛神赋》"翩若惊鸿"4 处典故引用）**未**替换
+  - wiki/characters/季婉宁.md 第 28 行：艺名立意升级为"翩若惊鸿，婉若游龙"全句，名实呼应婉宁
+  - wiki/continuity/continuity-naming-map.md：追加本次改名条目
+  - wiki/continuity/人物称谓全索引·防漏改.md：
+    * 三人允许称谓重排（阿烟 / 阿婉 / 烟姐 / 婉姐 等）
+    * 禁止词清单追加（霍惊鸿 / 惊鸿-人名 / 季繁星 / 繁星 / 穆清-单独）
+- Contradictions: 无
+- Decisions needed:
+  - c002 开写前再做一次全库扫一遍，确认 0 残留
