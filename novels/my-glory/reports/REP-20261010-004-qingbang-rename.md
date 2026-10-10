@@ -85,3 +85,10 @@ ACK 后我做：
 - 更新 overview / index / continuity-naming-map / 命名候选桥页
 - 追加 log
 - 跑 lint + 图谱 + commit + push
+
+## 用户决议（2026-10-10）
+
+- **采用名**：**青龙帮**（非本页 12 候选 / 4 推荐之一，用户另定）
+- **id**: `fac-qinglong-bang`，slug: `青龙帮`
+- **理由（我方评估）**：延续"青"字识别感，加"龙"字加强江湖气；与本作已有命名（白袍会 / 青花会 / 飞鸿帮 / 忠信帮）气质一致；非真实历史组织名
+- **落地**：见 `decisions/DEC-20261010-004-qingbang-to-qinglong-bang.md`

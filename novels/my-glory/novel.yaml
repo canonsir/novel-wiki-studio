@@ -28,7 +28,7 @@ boundaries:
     - 原稿全部主线事件、人物关系、爽感节点、后宫张力
     - "北辰 + 杀破狼"命理主轴
     - 真实文脉背景（淮军/湘军/漕运/内务府皇商/北洋军统 五大家族）
-    - 组织原名（天下会 / 鬼组 / 海迪 / 狼舞 / 白袍会 / 忠信帮 / 飞鸿帮 / 天一集团 / 神龙基地 / 青帮）
+    - 组织原名（天下会 / 鬼组 / 海迪 / 狼舞 / 白袍会 / 忠信帮 / 飞鸿帮 / 天一集团 / 神龙基地 / 青龙帮）
     - 真实武学术语（道家十二段锦 / 杀破狼 / 十重天宫 / 一级药剂）
     - 大结局保留"我的荣耀"的身份闭环
   must_avoid:
@@ -60,7 +60,7 @@ graph:
 kb_dependencies:
   - common/knowledge-base/china/geography-folk/real-to-fictional-map.md
   - common/knowledge-base/china/geography-folk/regional-overview.md
-  - common/knowledge-base/china/jianghu/secret-societies.md       # 洪门 / 青帮 / 哥老会（天下会/青帮/白袍会 渊源）
+  - common/knowledge-base/china/jianghu/secret-societies.md       # 洪门 / 青龙帮 / 哥老会（天下会/青龙帮/白袍会 渊源）
   - common/knowledge-base/china/jianghu/martial-schools.md
   - common/knowledge-base/china/jianghu/etiquette-and-rules.md
   - common/knowledge-base/china/jianghu/underground-economy.md

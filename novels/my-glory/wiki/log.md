@@ -114,3 +114,21 @@
 - Decisions needed:
   - 青帮改名：请从 REP-004 的 12 候选 or 4 推荐里挑选，或给自己的方案
   - 敏感红线清单仍 proposed，S1 开写前请你快速过一遍重点条目（见 §4 第 1-3 章 Hook 收敛样例）
+
+## [2026-10-10] decision | 青帮 → 青龙帮（DEC-004）
+
+- Sources:
+  - 用户决议：青帮 → 青龙帮
+  - 合规约束：national-redlines §48 / platform-redfruit §49（真实历史组织名"青帮"必须虚构化）
+- Added:
+  - wiki/factions/青龙帮.md（id: fac-qinglong-bang, slug: 青龙帮；新增"四堂"分部与"三不"门规）
+  - decisions/DEC-20261010-004-qingbang-to-qinglong-bang.md（accepted）
+- Updated:
+  - wiki/characters/{厉擎苍, 秦枭, 厉天鸿, 宁云疏}.md 内文"青帮"→"青龙帮"
+  - wiki/factions/天一集团.md、wiki/index.md、novel.yaml 同步
+  - wiki/continuity/continuity-naming-map.md 对账追加
+  - reports/REP-20261010-004-qingbang-rename.md 追加「用户决议」小节
+- Deleted:
+  - wiki/factions/青帮.md
+- Contradictions: 无
+- Decisions needed: 本条已完成；REP-003 §3 剩余 3 项（天下会 / 天一集团 / 神龙基地）仍挂起但非必改
