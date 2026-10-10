@@ -57,20 +57,47 @@ tags: [knowledge-base, <分类>]
 knowledge-base/
 ├── README.md                    # 本文
 ├── china/                       # 中国文化圈
-│   ├── philosophy/              # 儒释道法 / 心学 / 兵家 / 法家
-│   ├── history/                 # 清末 / 民国 / 建国初 / 改革开放 分期
-│   ├── geography-folk/          # 真实→虚构映射、省市方言民俗
-│   ├── jianghu/                 # 江湖 / 门派 / 武学 / 黑帮礼仪
-│   └── law-enforcement/         # 公安司法程序 / 涉黑办案 / 法律边界
+│   ├── philosophy/              # 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水
+│   │   ├── confucianism.md
+│   │   ├── buddhism.md
+│   │   ├── daoism.md
+│   │   ├── legalism.md
+│   │   ├── wangyangming.md
+│   │   ├── bingjia-strategy.md
+│   │   ├── mohism-and-others.md
+│   │   └── mythology-and-folk-belief.md
+│   ├── history/                 # 古代 / 清末 / 民国 / 建国改开 / 当代
+│   │   ├── ancient-dynasties.md
+│   │   ├── late-qing.md
+│   │   ├── republican-china.md
+│   │   ├── prc-and-reform.md
+│   │   └── contemporary-2010s.md
+│   ├── geography-folk/          # 虚构映射 / 分区民俗 / 节气 / 茶酒饮食
+│   │   ├── real-to-fictional-map.md
+│   │   ├── regional-overview.md
+│   │   ├── festivals-calendar.md
+│   │   └── tea-wine-cuisine.md
+│   ├── jianghu/                 # 门派 / 会党 / 礼节 / 现代地下经济
+│   │   ├── secret-societies.md
+│   │   ├── martial-schools.md
+│   │   ├── etiquette-and-rules.md
+│   │   └── underground-economy.md
+│   └── law-enforcement/         # 扫黑 / 公安日常
+│       ├── anti-mafia.md
+│       └── police-daily.md
 ├── world/                       # 其他文化圈
 │   ├── religion-philosophy.md
 │   ├── history-overview.md
 │   └── cultural-tropes.md
 └── crafts/                      # 跨文化工艺与硬设定
     ├── martial-arts.md
-    ├── finance-business.md
+    ├── weapons.md
     ├── medicine-pharmacology.md
-    └── weapons.md
+    ├── finance-business.md
+    ├── vehicles.md
+    ├── luxury-fashion.md
+    ├── art-antiques.md
+    └── technology-hacking.md
 ```
 
 ## 当前成熟度
@@ -78,11 +105,12 @@ knowledge-base/
 | 条目 | 状态 | 备注 |
 |---|---|---|
 | `china/geography-folk/real-to-fictional-map.md` | active | 全局硬约束 |
-| `china/philosophy/*` | 部分 active | 儒释道心学已写详细 |
-| `china/history/*` | 部分 active | 清末 / 民国 / 改开已写 |
-| `china/jianghu/*` | active | 门派 / 武学 / 黑帮礼节 |
-| `china/law-enforcement/*` | active | 公安 / 涉黑程序 |
-| `world/*` | stub | 用到再补 |
-| `crafts/*` | 部分 active | 武学 / 枪械 / 医药 / 金融 |
+| `china/philosophy/*` | active | 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水 共 8 篇 |
+| `china/history/*` | active | 古代 / 清末 / 民国 / 建国改开 / 当代 共 5 篇 |
+| `china/geography-folk/*` | active | 映射 / 民俗 / 节气 / 茶酒 共 4 篇 |
+| `china/jianghu/*` | active | 门派 / 会党 / 礼节 / 地下经济 共 4 篇 |
+| `china/law-enforcement/*` | active | 扫黑 / 公安日常 共 2 篇 |
+| `world/*` | active | 宗教 / 世界史 / 跨文化原型 共 3 篇 |
+| `crafts/*` | active | 武学 / 枪械 / 医药 / 金融 / 车辆 / 奢侈品 / 古玩 / 科技 共 8 篇 |
 
 **约定**：stub 条目的 `TODO:` 区标注"用到再补"是允许的，但首次需要用到时**必须**先写满再写入小说。

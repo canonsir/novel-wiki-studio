@@ -169,16 +169,16 @@ Skill 不自己揽活，由 Agent 调用。详见 `.trae/skills/README.md`。
 
 ### 13.3 真实世界知识库（`common/knowledge-base/`）
 
-虚实结合是本仓的核心定位。所有涉及真实世界的描写（历史 / 地理 / 哲学 / 江湖 / 法律 / 武学 / 医药 / 枪械）必须先查知识库：
+虚实结合是本仓的核心定位。所有涉及真实世界的描写（历史 / 地理 / 哲学 / 江湖 / 法律 / 武学 / 医药 / 枪械 / 车辆 / 奢侈品 / 古玩 / 科技）必须先查知识库：
 
 ```
 knowledge-base/
 ├── china/
-│   ├── philosophy/     # 儒释道法 / 心学 / 兵家
-│   ├── history/        # 清末 / 民国 / 建国初 / 改开
-│   ├── geography-folk/ # 真实→虚构映射、分区民俗
-│   ├── jianghu/        # 门派 / 会党 / 礼节
-│   └── law-enforcement/# 公安 / 司法 / 扫黑
+│   ├── philosophy/     # 儒释道法 / 心学 / 兵家 / 诸子 / 神话风水 (8)
+│   ├── history/        # 古代 / 清末 / 民国 / 建国改开 / 当代 (5)
+│   ├── geography-folk/ # 真实→虚构映射 / 分区民俗 / 节气 / 茶酒饮食 (4)
+│   ├── jianghu/        # 门派 / 会党 / 礼节 / 现代地下经济 (4)
+│   └── law-enforcement/# 扫黑 / 公安日常 (2)
 ├── world/
 │   ├── religion-philosophy.md
 │   ├── history-overview.md
@@ -187,7 +187,11 @@ knowledge-base/
     ├── martial-arts.md
     ├── weapons.md
     ├── medicine-pharmacology.md
-    └── finance-business.md
+    ├── finance-business.md
+    ├── vehicles.md
+    ├── luxury-fashion.md
+    ├── art-antiques.md
+    └── technology-hacking.md
 ```
 
 **硬约束**：
