@@ -253,3 +253,36 @@
   - 用户选择结尾方向（A/B/C/自定义）
   - 用户 ACK 篇幅上限（300 万 vs 350 万）
   - 用户 ACK 后宫归属原则
+
+## [2026-10-10] decision | 结尾方向定稿：方向 C 双层结局（DEC-007）
+
+- Sources:
+  - 用户 ACK："C 双层结局"
+  - DEC-20261010-006 原著烂尾授权
+  - wiki/plot/S5-S6结尾重构·方向简报.md 方向 C pitch
+- Added:
+  - decisions/DEC-20261010-007-ending-direction-C-finalized.md（accepted）
+  - drafts/chapters/s6b-ghostorg-reform/（新增 Arc 15 目录）
+  - drafts/chapters/s6d-council-reform/（新增 Arc 17 目录）
+- Updated:
+  - wiki/plot/短剧Arc分段骨架.md：S6 从 3 Arc 扩为 5 Arc；总 Arc 16 → 18；章节区间扩展到 c900
+  - wiki/plot/structure-plot.md：卷级表 S6 更新为 5 Arc / c641-c900
+  - wiki/overview.md：
+    * 分卷幕结构表更新（新增 Arc 数列）
+    * Open Questions 更新 DEC-004/005/006/007 ACK 状态
+    * 新增"结尾方向定稿（DEC-007）"段：固化 终章场景 / 后宫归属 / 主题答题
+  - novel.yaml:
+    * ending_reconstruction.status: user_ack_pending → accepted
+    * direction: C-双层结局
+    * s6_arc_expansion（5 项）
+    * harem_outcome（principal_wife=温书宁 / independent_partners / lifelong_bonds）
+    * final_scene_lock（听澜轩阳台 + 顾北辰/温书宁/顾崇岳 + 九头兽戒指+北辰令合铸）
+  - wiki/index.md Open Questions 更新
+- Renamed:
+  - drafts/chapters/s6b-hanxiaotian-end → s6c-hanxiaotian-end
+  - drafts/chapters/s6c-glory → s6e-glory
+- Contradictions: 无
+- Decisions needed:
+  - S6 五 Arc 的 scene-level 细纲（S5 完成后 editor-agent 推进）
+  - 跨境雇佣兵组织命名（Arc 14 核心对手；可用虚构国家代号）
+  - 国家监察机构命名（Arc 17 新引入角色所属）

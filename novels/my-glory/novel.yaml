@@ -54,10 +54,30 @@ boundaries:
     - 核心主题"荣耀"必须在终章给出明确答题（DEC-006）
     - 核心 6 位女主各有明确归宿点，不工具化（DEC-006）
   ending_reconstruction:
-    status: user_ack_pending
-    source: decisions/DEC-20261010-006-ending-reconstruction-authorized.md
+    status: accepted
+    direction: C-双层结局
+    source: decisions/DEC-20261010-007-ending-direction-C-finalized.md
     brief: wiki/plot/S5-S6结尾重构·方向简报.md
-    options: [方向A·传统爽文, 方向B·真实文脉, 方向C·双层结局（推荐）]
+    s6_arc_expansion:
+      - s6a-qinxiao-trap (c641-c700) 秦枭之局
+      - s6b-ghostorg-reform (c701-c750) 鬼组改制 + 血缘闭环 【新增】
+      - s6c-hanxiaotian-end (c751-c800) 韩啸天终局
+      - s6d-council-reform (c801-c850) 五家议会洗牌 【新增】
+      - s6e-glory (c851-c900) 荣耀 【扩充版】
+    harem_outcome:
+      principal_wife: 温书宁                  # 独家正妻
+      independent_partners:
+        - 霍惊鸿（国家特勤 / 不公开 / 保持"叉"的默契伴侣）
+        - 季繁星（娱乐圈 / 议会场合独家护航级）
+      lifelong_bonds:
+        - 叶浅浅（校园教师 / 校园回忆守望者）
+        - 裴青鸾（改制后鬼组组长 / 血缘表姐 → 转镇场型姐姐）
+        - 穆清（警界 / 法律守护者 / 跨江湖与法律的桥）
+    final_scene_lock:
+      location: 听澜轩茶馆阳台
+      characters: [顾北辰, 温书宁, 顾崇岳]
+      prop: 九头兽戒指残件 + 新铸北辰令合铸
+      theme_answer_required: true
 shared_universe: null
 source_of_truth:
   raw_immutable: true
