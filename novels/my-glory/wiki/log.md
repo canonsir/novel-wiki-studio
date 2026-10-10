@@ -132,3 +132,22 @@
   - wiki/factions/青帮.md
 - Contradictions: 无
 - Decisions needed: 本条已完成；REP-003 §3 剩余 3 项（天下会 / 天一集团 / 神龙基地）仍挂起但非必改
+
+## [2026-10-10] decision | 创作定调：逆袭+升级+爽文+后宫（画面感代偿）DEC-005
+
+- Sources:
+  - 用户决议：红线必须守住，但用"画面感+点到即可"替代一刀切；创作重心推向"主角逆袭+打怪升级+爽文+后宫"
+  - wiki/world/敏感红线预防清单·开写前.md（原稿敏感规模统计）
+  - common/constraints/genre-profiles/urban-male.md
+- Added:
+  - decisions/DEC-20261010-005-creative-pivot-rush-harem.md（accepted）
+  - wiki/world/爽点节奏保障方案.md（四联坐标系 + 单章爽点模板 + 打脸类型六分法 + 后宫张力管理 + 画面感代偿笔法库 + 每章 lint 清单 + 每卷节奏总把关）
+- Updated:
+  - wiki/world/敏感红线预防清单·开写前.md §2.9 新增"画面感代偿笔法"章节（统一收敛哲学 / 对比样本表 / 关门镜头六法 / 独占不碰身原则 / 爽点加码补偿规则）
+  - novel.yaml narrative.tone 增加"画面感收敛 / 后宫张力 / 逆袭打脸 / 打怪升级"；reader_promise 升级为"都市逆袭+打怪升级+后宫爽文"；core 新增 creative_pivot 块（四轴 + 代偿模式）
+  - wiki/overview.md 读者承诺段改写为四联坐标 + 收敛哲学三条
+  - wiki/index.md 新页上架；Reports/Open Questions 更新 DEC-004/005 已 ACK
+- Contradictions: 无
+- Decisions needed:
+  - author-agent 开写时必须 reference 爽点节奏方案 + 敏感红线清单两份
+  - reviewer-agent 发布前对照"画面感收敛是否到位 / 爽点节奏是否达标"
