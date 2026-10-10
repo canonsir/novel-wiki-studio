@@ -108,10 +108,11 @@
 
 ## Plot & Timeline
 
+- [[plot/全书大纲总览|《我的荣耀》全书大纲总览·开写前最后一张图]] — 主入口 / 4 张 Mermaid 图 — proposed
 - [[plot/structure-plot|《我的荣耀》分卷骨架]] — S1-S6 卷级骨架 — proposed
-- [[plot/短剧Arc分段骨架|短剧 Arc 分段骨架]] — S1-S6 拆为 16 Arc / 文件夹映射 — proposed
+- [[plot/短剧Arc分段骨架|短剧 Arc 分段骨架]] — S1-S6 拆为 18 Arc / 文件夹映射 — proposed
 - [[plot/arcs/Arc1-女神与仙人跳-图谱|Arc 1 女神与仙人跳 剧情图谱]] — c001-c030 / mermaid — proposed
-- [[plot/S5-S6结尾重构·方向简报|S5-S6 结尾重构·方向简报]] — DEC-006 三方向 pitch — user ACK pending
+- [[plot/S5-S6结尾重构·方向简报|S5-S6 结尾重构·方向简报]] — DEC-006 三方向 pitch — accepted(方向C)
 
 ## Relationships
 

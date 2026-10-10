@@ -311,3 +311,41 @@
 - Contradictions: 无
 - Decisions needed:
   - c002 开写前再做一次全库扫一遍，确认 0 残留
+
+## [2026-10-10] expand | 全书大纲总览 + 占位页填实（开写前最后一张图）
+
+- Sources:
+  - 用户决议："小说整体大纲好了吗？人物大纲关系图、故事发展线、人物组织故事拓扑图等等，先看到完整的大概，然后进入改编"
+  - 已固化决议 DEC-001 到 DEC-008
+- Added:
+  - wiki/plot/全书大纲总览.md：
+    * 全书元参数固化表（10 条）
+    * Mermaid 图 1 · 人物组织故事拓扑（主角圈 / 后宫 / 主角阵营 / 五家议会 / 反派 / 辅助势力，含血缘 / 情感 / 兄弟 / 阵营 / 家族 / 议会 / 反派链）
+    * Mermaid 图 2 · 全书故事发展线（S1-S6 时间轴 + 终章）
+    * 18 Arc 单元细节表（含每 arc 核心对手 / 新角色 / 结局钩子）
+    * Mermaid 图 3 · 命盘杀破狼与伏笔收束（S1-S4 伏笔 → S5-S6 收束位置）
+    * Mermaid 图 4 · 六位女主弧线归属（timeline 图）
+    * 关键待确认事项（已 ACK / 可延后 ACK）
+    * 开写路径建议
+- Updated:
+  - wiki/relationships/relationship-matrix.md：从 17 行占位页扩至完整
+    * 主角圈内信任链（6 对）
+    * 女主圈情感（9 对）
+    * 反派圈对抗（7 对）
+    * 兄弟 / 组织内部（5 对）
+    * 关键 Arc 张力进场点表
+  - wiki/clues/clue-ledger.md：从 17 行占位页扩至完整
+    * Arc 1 c001 已种 6 条伏笔
+    * S1 其他 Arc 待种 7 条
+    * S2-S4 待种 6 条
+    * S5-S6 终局 5 条
+    * 共 24 条伏笔 + 收束检查矩阵
+  - wiki/timeline/timeline-master.md：从 23 行占位页扩至完整
+    * 骨架时间线 T-20Y → T+3.5Y（全书故事线 3.5 年）
+    * 五家议会春分/秋分正会锁定
+    * 真实历史背景节点
+  - wiki/index.md：挂新页 + 升级 S5-S6 简报状态为 accepted(方向C)
+- Contradictions: 无
+- Decisions needed:
+  - 用户 ACK 本总览图谱 → 开 c002
+  - 可延后 ACK：贪狼/七杀人物 / 跨境雇佣兵名 / 国家监察机构名
