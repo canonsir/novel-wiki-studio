@@ -1,5 +1,68 @@
 # Change Log
 
+## [2026-10-11] decision | 小说定名·最终版《众星拱北辰》(覆盖 DEC-010)
+
+- Sources:
+  - 用户决议:"小说名定了'众星拱北辰',北辰既是主角之名,也是全书终局的答案"
+  - decisions/DEC-20261011-011-title-finalized-zhongxing-gong-beichen.md
+- Added:
+  - decisions/DEC-20261011-011-title-finalized-zhongxing-gong-beichen.md(最终定名决议 / 覆盖 DEC-010)
+  - reports/REP-20261011-011-shortdrama-naming-candidates.md(红果短剧名候选池 / 暂缓到全书改编完成后再定)
+- Updated:
+  - novel.yaml:title "顾少归来" → "众星拱北辰";title_shortdrama "少主的温教授" → ""(暂缓);aliases 新增"顾少归来"为宣发备用词
+  - wiki/overview.md:标题改为《众星拱北辰》总览 + 新增书名诗眼解说
+  - wiki/index.md:overview 行书名更新;DEC-010 标记"**已被 DEC-011 覆盖**";DEC-011 ACK 新增
+- Contradictions: 无(c001-c007 正文中"众星拱北辰"伏笔已经在 c001 开场埋好 — 书名定名完全兼容现有稿件)
+- Decisions needed:
+  - 红果短剧名(5 候选:北辰:帝都无双 / 从网吧少年到帝都之巅 / 谁说网吧少年不能掌帝都 / 北辰执棋 / 少主与温教授)— 暂缓到 S1 完成后(c120)初筛
+  - 新封面 cover-zhongxing-gong-beichen.jpg 延后到 Arc 1 全部落地(c030)后生成
+  - 新简介 synopsis-zhongxing-gong-beichen.md 延后到 Arc 1 全部落地(c030)后生成
+
+## [2026-10-11] expand | Arc 1 第一幕 c002-c005 落地(4 章正文 + 场景 outline 微调)
+
+- Sources:
+  - wiki/plot/arcs/Arc1-scene-outline-c001-c030.md
+  - wiki/world/章节连贯性与完整性守则.md
+  - wiki/world/爽点节奏保障方案.md
+  - wiki/world/敏感红线预防清单·开写前.md
+  - wiki/continuity/人物称谓全索引·防漏改.md
+- Added:
+  - drafts/chapters/s1a-encounter-trap/c002-纸条上的名字.md(3800 字 / 厉擎苍→顾北辰 POV)
+  - drafts/chapters/s1a-encounter-trap/c003-顾家的北辰.md(3800 字 / 顾北辰 POV / 班群炸锅 + 温书宁第二条瞬间)
+  - drafts/chapters/s1a-encounter-trap/c004-听澜轩的旧算盘.md(3800 字 / 温景同是顾崇岳老师揭底)
+  - drafts/chapters/s1a-encounter-trap/c005-处分通知下来之前.md(3800 字 / 办公室对决 + 董三爷登场 + 三叔公钩子)
+  - 待新建 Wiki 条目: wiki/characters/严振声.md(升级原占位"严律师")/ wiki/characters/董三爷.md / wiki/characters/三叔公.md / wiki/characters/老刘.md
+- Updated:
+  - drafts/manuscript/latest.md:追加 c002-c005 正文(2511 行,2 万字 → 3.8 万字)
+  - scene outline 微调:原 c004 处分 + c005 听澜轩 → 互换为 c004 听澜轩 + c005 处分;原 c030 "姑奶奶"→ 改为"三叔公"(宗族男性优先,Arc 1→Arc 2 过渡点不受影响)
+- Contradictions:
+  - 乙丑年秋(c004,30 年前)与丁亥年秋(c002,2 年前)时间线 → c005 用"**本金 + 二十八年利息**"口径调和,偏差 2 年,后续 c009 需精确校对
+- Decisions needed:
+  - 严律师全名"严振声"确认(本次 c005 固化)
+  - 董三爷姓氏"董"确认(本次 c005 固化)
+  - 三叔公登场时间从 c030 提前到 c006 开场确认(本次 c005 钩子固化)
+
+## [2026-10-10] decision | 小说定名·方案 M 双名双发 + 封面与简介生成
+
+- Sources:
+  - 用户决议："确认采用方案 M 双名双发，开始生成封面和简介"
+  - reports/REP-20261010-008-naming-click-driven.md
+  - reports/REP-20261010-010-naming-short-form.md
+- Added:
+  - decisions/DEC-20261010-010-title-scheme-M-double-name.md（固化双名双发）
+  - assets/covers/cover-gu-shao-gui-lai.jpg（番茄长篇封面：京畿胡同 + 都市天际线分屏 + 扁担）
+  - assets/covers/cover-shao-zhu-de-wen-jiao-shou.jpg（红果短剧封面：温书宁戴眼镜 + 顾北辰少主装对视）
+  - outputs/pitches/synopsis-double-name.md（两版简介 + 黄金句 + 标签 + 合规自查）
+- Updated:
+  - novel.yaml：title "我的荣耀" → "顾少归来"；新增 title_shortdrama "少主的温教授"；aliases 保留"我的荣耀"为内核词
+  - wiki/characters/温书宁.md：职业"中文系新任讲师" → "中文系副教授"；学历"文学硕士" → "文学博士"（适配短剧名）
+  - wiki/overview.md：标题更新为《顾少归来》总览（红果短剧名：《少主的温教授》）
+  - wiki/index.md：overview 行书名更新；DEC-010 标记已 ACK
+- Contradictions: 无
+- Decisions needed:
+  - 封面与简介待用户最终确认（status: proposed）
+  - 确认后进入 c002 开写流程
+
 ## [2026-10-10] ingest | 《我的荣耀》改编初始化
 
 - Sources:

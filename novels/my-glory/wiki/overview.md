@@ -1,17 +1,23 @@
 ---
 id: overview
 type: overview
-title: 《我的荣耀》故事总览
+title: 《众星拱北辰》故事总览
 status: active
 canon: proposed
 source_refs:
   - raw/manuscript/我的荣耀_原稿封板版.md
   - raw/references/REF-20261010-001-feishu-adaptation-guli-beichen.md
-updated: 2026-10-10
+  - decisions/DEC-20261011-011-title-finalized-zhongxing-gong-beichen.md
+updated: 2026-10-11
 tags: [hub, main]
 ---
 
 # 故事总览
+
+> 书名《众星拱北辰》出自《论语·为政》"为政以德，譬如北辰，居其所而众星共之"。
+> "北辰"既是主角之名（顾北辰），也是全书终局之位（五家议会首席 / 命盘杀破狼聚齐 / 众星归位）。
+> 书名贯穿**身世**（父亲取名的真实寓意）、**命盘**（杀破狼三星聚齐）、**权力格局**（五家议会洗牌）三条主线；
+> 前期看似平凡，后期才真正读懂——完整首尾呼应。
 
 ## 一句话故事
 

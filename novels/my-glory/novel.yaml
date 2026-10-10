@@ -1,6 +1,10 @@
 schema_version: 1
 id: my-glory
-title: "我的荣耀"
+title: "众星拱北辰"                 # 番茄长篇正名（DEC-20261011-011 最终定名）
+title_shortdrama: ""                # 红果短剧专用名暂缓；候选见 reports/REP-20261011-011
+aliases:
+  - "我的荣耀"                     # 内核词，保留为 S6e 最终章节名
+  - "顾少归来"                     # 宣发备用词（DEC-010 回滚保留）
 status: setup
 language: zh-CN
 genre: [都市, 逆袭, 爽文, 后宫, 热血]
